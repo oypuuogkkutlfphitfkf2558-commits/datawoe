@@ -1,0 +1,1521 @@
+
+/*
+/* ======================================================= */
+/* ====== 3. MEDIA QUERY: Mobile (iPhone 12, max-width: 450px) ====== */
+/* ======================================================= */
+
+@media (max-width: 450px) {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.signature-box-note {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #6D2932; 
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f8f7f5;
+    color: #333;
+}
+
+/* Container: Center content on large screens */
+.container-Fluid {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Main Structure (Desktop: Two Columns) */
+.checkout-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.left-column {
+    flex: 3; /* Summary & Shipping */
+}
+.right-column {
+    flex: 1; /* Payment Details */
+    min-width: 300px;
+    display: none; /* ซ่อน Payment Details (คอลัมน์ขวา) ในหน้า Information */
+}
+
+/* Shared Section Styles */
+.summary-order, .shipping-method, .payment-details {
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+}
+.payment-details {
+    display: none; /* ซ่อน Payment Details By Default */
+}
+
+/* --- Checkout Steps --- */
+.checkout-steps {
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0 20px;
+    font-size: 0.8rem;
+    color: #999;
+}
+.step {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+/* สไตล์สำหรับขั้นตอนปัจจุบัน (Information) */
+.current-step { 
+    color: #333;
+    font-weight: bold;
+}
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 3px;
+}
+
+/* --- Summary Order Styles --- */
+.product-item {
+    display: flex;
+    background-color: #F3F3F3;
+    padding: 15px;
+}
+.product-image {
+    width: 100px; 
+    height: auto;
+    margin-left: -150px;
+}
+.item-right {
+    flex-grow: 1;
+}
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+.delete-icon {
+    color: #999;
+    cursor: pointer;
+}
+.item-sub-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: -110px;
+    font-size: 14px;
+  
+    color: #561C24; 
+    margin-bottom: 10px;
+}
+
+.item-details {
+    display: grid;
+
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #561C24;
+    margin-top: 5px;
+}
+.item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+.item-quantity {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.item-price {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    margin-left: 170px;
+    font-size: 14px;
+    color: #561C24;
+}
+
+/* --- Shipping Method Styles --- */
+.shipping-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.shipping-option.selected { 
+    border-color: #4b1a1a;
+}
+.method-name, .method-name2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #561C24;
+}
+.method-name3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #808080; 
+    display: block;
+}
+  
+.pay-button2 {
+    width: 100%;
+    background-color: #4b1a1a;
+    padding: 15px;
+    border: none;
+    text-align: center;
+    border-radius: 4px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #f1f1f1; 
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase; /* ทำให้เป็นตัวใหญ่ตามภาพ */
+}
+
+.delivery-time {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #666;
+}
+.shipping-price, .shipping-price2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #561C24;
+}
+.shipping-price3{
+        font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #5f5f5f;
+}
+.hide-on-desktop {
+    display: none !important;
+}
+
+/* --- Price Summary & Buttons --- */
+.price-summary {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+.price-row, .price-row2, .total-row {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #561C24;
+}
+.price-row2 {
+    font-weight: 300;
+}
+.total-row {
+    font-weight: 700;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+.hide-on-desktop {
+    display: none !important;
+}
+/* Action Buttons (Next/Pay) */
+.pay-button2 { /* เพิ่ม .pay-button2 เข้าไปในสไตล์หลัก */
+    width: 100%;
+    background-color: #4b1a1a;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #f1f1f1;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.talt{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #6D2932; 
+}
+    .container-Fluid {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* --- โครงสร้างหลัก: เปลี่ยนเป็น 1 คอลัมน์ --- */
+    .checkout-content {
+        flex-direction: column;
+        gap: 0;
+    }
+    .left-column {
+        flex: 1 1 100%;
+    }
+    .right-column {
+        display: none; /* ซ่อนคอลัมน์ขวาบน Mobile */
+    }
+
+    /* ********* แสดง Shipping Method (ไม่ซ่อน) ********* */
+    .shipping-method {
+        display: block; /* แก้ไข: ทำให้ Shipping Method แสดงผลบน Mobile */
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    /* Summary Order (ทำให้เต็มขอบจอ) */
+    .summary-order {
+        padding: 15px; 
+        margin-bottom: 10px; 
+        border-radius: 0;
+        box-shadow: none;
+        background-color: #ffffff;
+    }
+    
+    /* Product Item: เรียงซ้อนกันบนมือถือ */
+    .product-item {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .product-image {
+        max-width: 150px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .item-footer {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .item-details {
+        width: 100%; 
+        text-align: center;
+    }
+    .item-right {
+        text-align: center;
+    }
+    .item-header {
+        justify-content: center;
+        width: 100%;
+    }
+    .item-header > * { /* จัดกึ่งกลางชื่อสินค้า */
+        margin: 0 auto;
+    }
+    .delete-icon { /* ย้ายไอคอนถังขยะไปอยู่ด้านขวาบนสุด */
+        position: absolute; 
+       margin-top:-140px;
+        margin-left: 280px;
+    }
+
+
+    /* Checkout Steps */
+    .checkout-steps {
+        justify-content: center;
+        padding: 10px 15px;
+        background-color: #ffffff;
+    }
+    
+    /* Price Summary & Button */
+    .price-summary {
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #f8f7f5;
+    }
+    .price-row, .price-row2, .total-row {
+        font-size: 14px;
+    }
+    
+    .action-button {
+        padding: 12px;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100% - 30px);
+        margin-bottom: 20px;
+    }
+    .tesx{
+    font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 20px;
+         color: #561C24; 
+}
+   .tesx2{
+    font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         margin-left: 110px;
+         margin-top: -130px;
+         font-size: 20px;
+         color: #561C24; 
+}
+}
+
+
+
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 1024px) {   
+    /* การตั้งค่าพื้นฐาน */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.tesx{
+    font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 28px;
+         color: #561C24; 
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f8f7f5;
+    color: #333;
+}
+
+/* * ใช้ Media Query เพื่อควบคุมความกว้างหลัก
+ * สำหรับหน้าจอขนาดใหญ่ (เช่น 1024px ขึ้นไป)
+ */
+.container-Fluid {
+    max-width: 1000px; /* ปรับให้เหมาะสมกับ 1024px viewport */
+    margin: 40px auto; /* เพิ่ม margin บนล่าง */
+    padding: 0 20px;
+}
+/* ... โค้ดเดิมสำหรับ h2, nav-left, nav-right, search-input, menu-icon ... */
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* --- Checkout Steps --- */
+.checkout-steps {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0 20px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.step.current {
+    color: #333;
+    font-weight: bold;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 3px;
+}
+/* ---------------------------------------------------- */
+/* --- โครงสร้างหลัก (Responsive Layout) --- */
+/* ---------------------------------------------------- */
+
+.checkout-content {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* * กำหนดอัตราส่วนคอลัมน์หลักสำหรับหน้าจอขนาดใหญ่
+ * โดยเฉพาะ (1024px ขึ้นไป)
+ */
+.left-column {
+    flex: 3; /* 2 ใน 3 ส่วน หรือประมาณ 66% */
+}
+
+.right-column {
+    flex: 1; /* 1 ใน 3 ส่วน หรือประมาณ 33% */
+    min-width: 300px; /* จำกัดความกว้างขั้นต่ำ เพื่อไม่ให้เล็กเกินไป */
+}
+
+/* --- Style ทั่วไปของ Section --- */
+.summary-order, .shipping-method, .payment-details {
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff; /* กำหนดให้ชัดเจนสำหรับ Summary/Shipping */
+}
+/* Payment Details มีสีพื้นหลังเฉพาะ */
+.payment-details {
+    background-color: #F3F3F3; 
+}
+
+
+/* --- Summary Order (สรุปคำสั่งซื้อ) --- */
+.signature-box-note {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #6D2932; 
+    margin-bottom: 20px;
+}
+.talt{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #6D2932; 
+}
+
+.product-item {
+    display: flex;
+    background-color: #F3F3F3;
+    padding: 15px;
+    /* ปรับปรุงให้ยืดหยุ่นมากขึ้นในแนวนอนสำหรับ 1024px */
+}
+
+.item-left {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.product-image {
+    width: 250px; 
+    height: auto;
+}
+
+.item-right {
+    flex-grow: 1;
+    /* ปรับ margin-top ใน item-details ให้เข้ากับรูปภาพ */
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.delete-icon {
+    color: #999;
+    cursor: pointer;
+}
+
+.item-sub-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: -10px;
+    color: #561C24; 
+    margin-bottom: 10px;
+}
+
+.item-details {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #561C24; 
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.item-footer {
+    margin-top: 150px; /* รักษาระยะห่างตามภาพ */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-quantity {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.item-price {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #561C24; 
+}
+
+/* --- Shipping Method (วิธีจัดส่ง) --- */
+.shipping-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    background-color: #fff; /* เพิ่มพื้นหลังให้ตัวเลือกเด่น */
+}
+
+.shipping-option.fedex {
+    border-color: #4b1a1a; 
+}
+
+.shipping-logo {
+    width: 50px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.shipping-info {
+    flex-grow: 1;
+}
+
+.method-name {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #561C24; 
+    display: block;
+}
+.method-name2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #808080; 
+    display: block;
+}
+
+.delivery-time {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: #666;
+}
+
+.shipping-price, .shipping-price2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.shipping-price {
+    color: #561C24; 
+}
+.shipping-price2 {
+    color: #818181; 
+}
+
+
+/* --- Payment Details (รายละเอียดการชำระเงิน) --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #561C24; 
+}
+
+input[type="email"], input[type="text"], .card-inputs input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.email-group .input-container {
+    display: flex;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #561C24; 
+    font-size: 16px;
+    align-items: center;
+}
+
+.email-group input {
+    border-right: none;
+    font-weight: 300;
+    color: #561C24; 
+    border-radius: 4px 0 0 4px;
+}
+
+.validation-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-left: -17px; 
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    /* ปรับพื้นหลังเมื่ออีเมลถูกต้อง */
+    background-color: #98fb98; 
+}
+
+.card-inputs {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #561C24; 
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+}
+
+.card-inputs input {
+    flex-grow: 1;
+}
+
+.card-inputs .small-input {
+    flex-grow: 0;
+    width: 80px;
+}
+
+.address-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #561C24; 
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px; /* เพิ่ม border-radius */
+}
+
+.address-container .validation-dot {
+    margin: 0;
+    background-color: #98fb98; /* สถานะที่อยู่สำเร็จ */
+}
+
+.city-zip {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px; /* เพิ่มระยะห่างจาก Address Box ด้านบน */
+}
+
+.city-group, .zip-group {
+    flex: 1;
+    /* * ลบ color: #a5a5a5; ออกเพื่อให้สีไม่จาง * */
+}
+
+/* ทำให้ข้อมูลในช่อง City/Zip มีกรอบและเห็นชัดเจน */
+.city-group input, .zip-group input {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #561C24;
+    font-size: 16px;
+    /* * เพิ่ม border: 1px solid #ccc; เพื่อให้มีกรอบ * */
+    /* * เพิ่ม padding และ margin เพื่อให้มีพื้นที่เหมือนกล่อง * */
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 100%; /* ให้เต็มความกว้างของ column นั้น ๆ */
+    background-color: #fff;
+}
+
+/* * สำหรับการแสดงผล "Bangkok" และ "994456" * */
+/* * ถ้าข้อมูลเหล่านี้แสดงผลด้วย <input> แท็ก *
+.city-group input[placeholder="Bangkok"], 
+.zip-group input[placeholder="994456"] {
+    font-weight: 300;
+    color: #561C24; /* สีเข้มเพื่อให้มองเห็นได้ชัด */
+    border: none; /* หากต้องการให้เหมือนภาพต้นฉบับที่ไม่มีกรอบ input */
+    padding: 0;
+    margin-top: 5px;
+    background-color: transparent;
+}
+*/
+
+/* * เนื่องจากในภาพ City/Zip ไม่ได้อยู่ในกล่อง Input แต่เป็น Text ธรรมดา * */
+/* * โค้ดที่คุณส่งมาจึงใช้เพียง .city-group และ .zip-group * */
+
+/* * หากต้องการให้แสดงเป็นข้อความธรรมดาที่จัดวางในลักษณะกล่อง * */
+.city-group, .zip-group {
+    padding: 10px; /* เพิ่ม padding เพื่อให้ดูมีพื้นที่ */
+    background-color: #ffffff; /* พื้นหลังสีขาว */
+    border-radius: 4px; /* มุมมน */
+    border: 1px solid #ccc; /* กรอบ */
+    
+    /* จัดการข้อความภายใน */
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #561C24; /* สีเข้มเพื่อให้เห็นชัดเจน */
+    line-height: 1.5;
+}
+/* ... (โค้ดส่วนอื่น ๆ ที่ไม่เกี่ยวข้อง) ... */
+.city-group label, .zip-group label {
+    display: block;
+    font-weight: normal;
+    font-size: 0.85rem;
+    color: #a5a5a5;
+}
+
+
+/* --- Price Summary (สรุปราคา) --- */
+.price-summary {
+    margin-top: 30px;
+    padding-top: 20px;
+    /* ในภาพต้นฉบับไม่มีเส้นแบ่งราคากับปุ่ม Pay */
+    /* border-top: 1px solid #ddd; */ 
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: #561C24; 
+    font-size: 16px;
+}
+.price-row2 { /* สำหรับค่า Subtotal และ Vat 10% */
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #561C24; 
+    font-size: 16px;
+}
+.total-row {
+    display: flex; /* เพิ่ม display: flex เพื่อจัด Total */
+    justify-content: space-between;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    color: #561C24; 
+    font-size: 16px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+.total-row .label {
+    font-weight: 700;
+}
+.total-row .amount {
+    font-weight: 700;
+}
+
+
+.pay-button {
+    width: 100%;
+    background-color: #4b1a1a;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    color: #f1f1f1; 
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase; /* ทำให้เป็นตัวใหญ่ตามภาพ */
+}
+
+
+/* ---------------------------------------------------- */
+/* --- Media Query สำหรับหน้าจอที่เล็กกว่า (เช่น มือถือ/แท็บเล็ต) --- */
+/* ---------------------------------------------------- */
+/* @media (max-width: 768px) {
+    .checkout-content {
+        flex-direction: column; 
+    }
+    .left-column, .right-column {
+        flex: 1 1 100%;
+        min-width: auto;
+    }
+    .product-item {
+        flex-direction: column;
+    }
+    .product-image {
+        width: 100%;
+        max-width: 200px; 
+    }
+} */
+     
+/* --- Form Content --- */
+.product-page-container {
+    display: flex; 
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px 30px; 
+    /* เพิ่ม background-color: white; หากต้องการพื้นหลังสีขาวชัดเจน */
+    background-color: white; 
+}
+
+/* --- ส่วนของรูปภาพสินค้า (ซ้าย) --- */
+.product-images {
+    flex: 1; 
+    padding-right: 30px;
+    
+}
+
+.product-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* --- ส่วนของรายละเอียดสินค้า (ขวา) --- */
+.product-details-container {
+    flex: 1; 
+    padding-left: 30px;
+}
+
+.brand-name {
+     font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #561C24;;
+}
+
+.product-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  margin-top: -15px;
+  font-size: 32px;
+  color: #561C24;
+}
+
+.product-price {
+     font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: -15px;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* ปุ่ม Add to cart */
+.add-to-cart-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #561C24; /* สีแดงเข้ม/น้ำตาล */
+color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+       font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  border-radius: 10px;  
+}
+
+.add-to-cart-btn:hover {
+    background-color: #561C24;
+}
+
+.delivery-info {
+       font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: 5px;
+  font-size: 20px;
+  color: #7C7C7C;
+}
+
+/* ส่วนหัวข้อ (Details, Introducing the perfect match) */
+.section-title {
+     font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: px;
+  color: #561C24;;
+}
+
+
+.details-text {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.details-text2 {
+    font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #561C24;;
+}
+
+/* --- ส่วนของสินค้าแนะนำ --- */
+.recommended-section {
+    margin-top: 40px;
+}
+
+.match-products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+    gap: 20px;
+}
+
+.match-product-item {
+    text-align: left;
+}
+
+.product-thumbnail-container {
+    position: relative;
+    background-color: #f0f0f0; 
+    height: 270px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #888;
+    cursor: pointer;
+}
+
+.product-name {
+      font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #561C24;;
+    margin: 5px 0 0;
+}
+
+.product-sub-name {
+       font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #561C24;;
+    margin: 0;
+}
+.product-price{
+     font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #535353;;
+    margin: 0;
+}
+.match-product-image {
+    /* ทำให้รูปภาพพอดีกับขนาด Container */
+    width: 100%;
+    height: auto;
+    /* ปรับให้รูปภาพถูกจัดให้อยู่ภายในกรอบและไม่บิดเบี้ยว */
+    object-fit: contain; 
+    /* หากรูปภาพมีพื้นหลังโปร่งใสหรือไม่เต็มพื้นที่ จะแสดงพื้นหลังสีเทาอ่อนตาม .product-thumbnail-container */
+}
+
+/* หากต้องการให้รูปภาพจัดอยู่ตรงกลางเป๊ะใน Product Thumbnail Container */
+.product-thumbnail-container {
+    /* ... โค้ดเดิม ... */
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+    /* ... โค้ดเดิม ... */
+}
+
+
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  .pay-button2 {
+ 
+    color: #f0f0f0; 
+   
+}
+/* การตั้งค่าพื้นฐาน */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #f8f7f5;
+    color: #333;
+}
+
+.container-Fluid {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* --- Navbar (ส่วนหัว) --- */
+
+
+
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+.menu-icon, .nav-right a {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    color: #333;
+}
+
+/* --- Checkout Steps --- */
+.checkout-steps {
+    /* * ปรับเพื่อให้ขั้นตอนการสั่งซื้อแสดงผลเป็นแนวนอนและอยู่เหนือ Payment Details 
+       * และจัดชิดขวา/ตรงกลางตามภาพต้นฉบับ
+    */
+    font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 16px;
+    display: flex;
+    justify-content: flex-end; /* จัดชิดขวาของพื้นที่คอลัมน์ขวา */
+    align-items: center;
+    padding: 10px 0 20px; /* เพิ่ม padding ด้านล่าง */
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* ใช้ margin-left แทน margin-right */
+}
+
+.step.current {
+    color: #333;
+    font-weight: bold;
+}
+
+.dot {
+    width: 6px; /* ลดขนาดจุดลงเล็กน้อย */
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-right: 3px;
+}
+/* --- โครงสร้างหลัก (Responsive Layout) --- */
+.checkout-content {
+    display: flex;
+    gap: 30px; /* ระยะห่างระหว่างคอลัมน์ */
+    margin-top: 20px;
+}
+
+.left-column {
+    flex: 2; /* ให้คอลัมน์ซ้ายมีขนาดใหญ่กว่า */
+}
+
+.right-column {
+    flex: 1; /* ให้คอลัมน์ขวามีขนาดเล็กกว่า */
+    min-width: 300px; /* จำกัดความกว้างขั้นต่ำ */
+}
+
+/* --- Style ทั่วไปของ Section --- */
+.summary-order, .shipping-method, .payment-details {
+    /* background-color: #616161; */
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Summary Order (สรุปคำสั่งซื้อ) --- */
+.signature-box-note {
+    font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 16px;
+         color: #6D2932; 
+    margin-bottom: 20px;
+}
+.talt{
+    font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 32px;
+         color: #6D2932; 
+}
+
+.product-item {
+    display: flex;
+    background-color: #F3F3F3;
+    padding: 15px;
+}
+
+.item-left {
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+
+.product-image {
+    width: 250px; /* ปรับขนาดรูปภาพ */
+    height: auto;
+
+}
+
+.item-right {
+    flex-grow: 1;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.delete-icon {
+    color: #999;
+    cursor: pointer;
+}
+
+.item-sub-title {
+       font-family: "Oswald", sans-serif;
+         font-weight: 500;
+         font-size: 14px;
+         margin-top: -10px;
+         color: #561C24; 
+    margin-bottom: 10px;
+}
+.tesx{
+    font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 32px;
+         color: #561C24; 
+}
+
+.item-details {
+    margin-top: 30px;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Oswald", sans-serif;
+         font-weight: 500;
+         font-size: 16px;
+        
+         color: #561C24; 
+    margin-bottom: 15px;
+}
+
+.label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.item-footer {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-quantity {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.item-price {
+    font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 16px;
+         color: #561C24; 
+}
+
+/* --- Shipping Method (วิธีจัดส่ง) --- */
+.shipping-option {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.shipping-option.fedex {
+    border-color: #4b1a1a; /* เน้นตัวเลือกที่เลือกอยู่ */
+}
+
+.shipping-logo {
+    width: 50px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.shipping-info {
+    flex-grow: 1;
+}
+.email-address{
+    font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 20px;
+         color: #561C24; 
+}
+
+.method-name {
+    font-family: "Oswald", sans-serif;
+         font-weight: 500;
+         font-size: 20px;
+         color: #561C24; 
+    display: block;
+}
+.method-name2 {
+    font-family: "Oswald", sans-serif;
+         font-weight: 500;
+         font-size: 20px;
+         color: #808080; 
+    display: block;
+}
+
+.delivery-time {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 12px;
+        
+    color: #666;
+}
+
+.shipping-price {
+     font-family: "Oswald", sans-serif;
+         font-weight: 500;
+         font-size: 20px;
+    color: #561C24; 
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+.shipping-price2 {
+     font-family: "Oswald", sans-serif;
+         font-weight: 500;
+         font-size: 20px;
+    color: #818181; 
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+/* --- Payment Details (รายละเอียดการชำระเงิน) --- */
+.payment-details {
+    background-color: #F3F3F3; /* พื้นหลังสีเข้มกว่าในส่วนนี้ */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 16px;
+    color: #561C24; 
+}
+
+input[type="email"], input[type="text"], .card-inputs input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.email-group .input-container {
+    display: flex;
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         color: #561C24; 
+         font-size: 16px;
+    align-items: center;
+}
+
+.email-group input {
+    border-right: none;
+      font-weight: 300;
+    color: #561C24; 
+    border-radius: 4px 0 0 4px;
+}
+
+.validation-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-left: -17px; /* ลบขอบทับซ้อน */
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+}
+
+.card-inputs {
+    font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         color: #561C24; 
+         font-size: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.card-inputs input {
+    flex-grow: 1;
+}
+
+.card-inputs .small-input {
+    flex-grow: 0;
+    width: 80px;
+}
+
+.address-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         color: #561C24; 
+         font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.address-container .validation-dot {
+    margin: 0;
+}
+
+.city-zip {
+    font-family: "Oswald", sans-serif;
+         font-weight: 300;
+          font-size: 16px;
+         
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.city-group, .zip-group {
+color: #a5a5a5;
+    flex: 1;
+}
+
+.city-group label, .zip-group label {
+    font-weight: normal;
+    font-size: 0.85rem;
+
+}
+
+.city-group input, .zip-group input {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         color: #561C24;
+          font-size: 16px;
+    border: none;
+    padding: 0;
+    margin-top: 5px;
+}
+
+/* --- Price Summary (สรุปราคา) --- */
+.price-summary {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+     font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         color: #561C24; 
+         font-size: 16px;
+}
+.price-row2 {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         color: #561C24; 
+         font-size: 16px;
+}
+
+.total-row {
+    font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         color: #561C24; 
+         font-size: 16px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.pay-button {
+    width: 100%;
+    background-color: #4b1a1a;
+    
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         color: #f1f1f1; 
+         font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+}   

@@ -1,0 +1,755 @@
+
+.oswald{
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+/* -------------------------------------------
+   สไตล์หลัก (Default: Desktop/Tablet)
+   - ใช้สไตล์นี้สำหรับอุปกรณ์ที่ใหญ่กว่า
+   ------------------------------------------- */
+.product-page-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px 30px;
+    background-color: white;
+}
+
+/* ส่วนของรูปภาพ */
+.product-images { padding-right: 10px; }
+.product-images img { width: 100%; height: auto; display: block; margin-bottom: 20px; }
+.product-details-container { padding-left: 30px; }
+
+/* -------------------------------------------
+   Media Query สำหรับหน้าจอขนาดเล็ก/โทรศัพท์ (Max Width 767px)
+   - ใช้สไตล์นี้เพื่อให้ Layout เหมือนภาพตัวอย่าง (1 คอลัมน์)
+   ------------------------------------------- */
+@media (max-width: 767px) {     
+    /* 1. Layout: เรียงซ้อนกัน */
+    .product-page-container {
+        flex-direction: column; /* เปลี่ยนจาก 2 คอลัมน์ เป็น 1 คอลัมน์ */
+        margin: 0 auto;
+        padding: 15px;
+        width: 100%;
+    }
+
+    /* ลบ padding/margin ของคอลัมน์ที่ถูกแบ่งออก */
+  
+    .match-product-image {
+    /* ทำให้รูปภาพพอดีกับขนาด Container */
+    width: 100%;
+    height: 100%;
+    /* ปรับให้รูปภาพถูกจัดให้อยู่ภายในกรอบและไม่บิดเบี้ยว */
+    object-fit: contain; 
+    /* หากรูปภาพมีพื้นหลังโปร่งใสหรือไม่เต็มพื้นที่ จะแสดงพื้นหลังสีเทาอ่อนตาม .product-thumbnail-container */
+}
+    .product-details-container {
+        padding-left: 10px;
+        margin-top: 15px;
+    }
+
+    /* 2. ซ่อนภาพที่ 2 (ภาพ flat) ตามตัวอย่างภาพ */
+    .product-flat-image {
+        display: none !important; 
+    }
+    
+    /* 3. ปรับขนาด Typography & Spacing */
+    .product-title { font-size: 28px; margin-top: 0; }
+    .product-price { font-size: 18px; margin-top: 0; } 
+    .delivery-info { font-size: 16px; }
+    .section-title { font-size: 20px; }
+    .details-text2 { font-size: 16px; }
+    
+    /* ปุ่ม Add to cart */
+    .add-to-cart-btn {
+        padding: 12px;
+        font-family: "Oswald", sans-serif;
+         font-weight: 500;
+         font-size: 12px;
+        margin-top: 15px;
+        color: #561C24; 
+    }
+    .add-to-cart-button {
+  /* ขนาดและพื้นที่ */
+  width: 100%; /* หรือ 100% ถ้าใช้ block element */
+  padding: 15px 25px;
+  /* รูปลักษณ์ */
+  background-color: #5C2D32; /* สีน้ำตาลเข้ม */
+  color: #E0E0E0; /* สีตัวอักษรเทาอ่อน */
+  border: none;
+  border-radius: 6px; /* ขอบมน */
+  /* ตัวอักษร */
+  font-size: 16px;
+  margin-top: -30px;
+  text-transform: uppercase;
+  /* จัดตำแหน่งให้อยู่ตรงกลางหากใช้ width ไม่เต็ม */
+  display: block;
+ 
+}
+
+    /* 4. สินค้าแนะนำ: 1 คอลัมน์ (บังคับให้เป็น 1 คอลัมน์ชัดเจน) */
+    .match-products-grid {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
+        padding: 0 10px; 
+        margin-top: 15px;
+        margin-left: 0;
+        margin-right: 0;
+
+        /* *** เพิ่มโค้ดนี้เพื่อให้กล่องมีความสูงเท่ากัน *** */
+        align-items: stretch; /* ทำให้ items ใน Grid ยืดเต็มความสูงของแถว */
+        /* หรือถ้าใช้ Flexbox ให้ใช้ align-items: stretch; กับ flex container */
+    }
+    
+    .match-product-item {   
+    max-width: 100%;
+    border-radius: 12px; /* ขอบมน */
+    padding: 10px; /* ระยะห่างภายในกล่อง (รอบรูปภาพ) */
+    margin-top: 10px;
+    text-align: left; 
+    /* 3. (ทางเลือก) เพิ่มเงาเพื่อให้ดูมีมิติเหมือนในภาพ */
+  
+    }
+    .product-thumbnail-container { height: 210px; } 
+    .product-name {
+    font-family: "Oswald", sans-serif;
+    margin-top: 25px ;
+         font-weight: 700;
+         font-size: 24px;
+         color: #561C24;;  }
+    .product-sub-name { 
+    font-family: "Oswald", sans-serif;
+    margin-top: -10px;
+         font-weight: 500;
+         font-size: 18px;
+         color: #561C24; }
+    .product-price { 
+        font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         margin-top: -10px;
+         font-size: 15px;
+         color: #561C24;
+     }
+
+    /* ปรับแต่ง Font style จากโค้ดเดิมที่อาจถูก override */
+    .brand-name { 
+         font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 15px;
+         color: #561C24;; 
+        margin-top: -20px;} /* คงค่าเดิม */
+    .details-text2 { font-family: "Oswald", sans-serif; font-weight: 300; 
+     font-size: 14px;
+     color: #561C24;   
+    
+    }
+    
+    .product-title, .section-title, .product-name {  
+        font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 24px;
+         color: #561C24; 
+        margin-top: -10px;}
+     .delivery-info, .add-to-cart-btn, .details-text2 { font-weight: 300; }
+}
+.product-price{
+font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 14px;
+         color: #3f3f3f; 
+}
+.delivery-info {
+font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 12px;
+         color: #7C7C7C; 
+        margin-top: 10px;
+    }
+
+.product-thumbnail-container {
+    background-color: #F5F5F5;
+    /* ... โค้ดเดิม ... */
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+    /* ... โค้ดเดิม ... */
+}
+.favorite-icon {
+    position: absolute;
+    top: 15px; /* เลื่อนลงจากขอบบนของกล่อง match-product-item */
+    right: 15px; /* เลื่อนเข้ามาจากขอบขวาของกล่อง match-product-item */
+    font-size: 1.5em; 
+    color: #999;
+    z-index: 10;
+}
+/* -------------------------------------------
+
+@media (min-width: 430px) {
+
+    
+}
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 1024px) {   
+     
+/* --- Form Content --- */
+.product-page-container {
+    display: flex; 
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px 30px; 
+    /* เพิ่ม background-color: white; หากต้องการพื้นหลังสีขาวชัดเจน */
+    background-color: white; 
+}
+
+/* --- ส่วนของรูปภาพสินค้า (ซ้าย) --- */
+.product-images {
+    flex: 1; 
+    padding-right: 30px;
+    
+}
+
+.product-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* --- ส่วนของรายละเอียดสินค้า (ขวา) --- */
+.product-details-container {
+    flex: 1; 
+    padding-left: 30px;
+}
+
+.brand-name {
+     font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #561C24;;
+}
+
+.product-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  margin-top: -15px;
+  font-size: 32px;
+  color: #561C24;
+}
+
+.product-price {
+     font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: -15px;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* ปุ่ม Add to cart */
+.add-to-cart-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #561C24; /* สีแดงเข้ม/น้ำตาล */
+color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+       font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  border-radius: 10px;  
+}
+
+.add-to-cart-btn:hover {
+    background-color: #561C24;
+}
+
+.delivery-info {
+       font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: 5px;
+  font-size: 20px;
+  color: #7C7C7C;
+}
+
+/* ส่วนหัวข้อ (Details, Introducing the perfect match) */
+.section-title {
+     font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: px;
+  color: #561C24;;
+}
+
+
+.details-text {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.details-text2 {
+    font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #561C24;;
+}
+
+/* --- ส่วนของสินค้าแนะนำ --- */
+.recommended-section {
+    margin-top: 40px;
+}
+
+.match-products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+    gap: 20px;
+}
+
+.match-product-item {
+    text-align: left;
+}
+
+.product-thumbnail-container {
+    position: relative;
+    background-color: #f0f0f0; 
+    height: 270px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #888;
+    cursor: pointer;
+}
+
+.product-name {
+      font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #561C24;;
+    margin: 5px 0 0;
+}
+
+.product-sub-name {
+       font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #561C24;;
+    margin: 0;
+}
+.product-price{
+     font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #535353;;
+    margin: 0;
+}
+.match-product-image {
+    /* ทำให้รูปภาพพอดีกับขนาด Container */
+    width: 100%;
+    height: auto;
+    /* ปรับให้รูปภาพถูกจัดให้อยู่ภายในกรอบและไม่บิดเบี้ยว */
+    object-fit: contain; 
+    /* หากรูปภาพมีพื้นหลังโปร่งใสหรือไม่เต็มพื้นที่ จะแสดงพื้นหลังสีเทาอ่อนตาม .product-thumbnail-container */
+}
+
+/* หากต้องการให้รูปภาพจัดอยู่ตรงกลางเป๊ะใน Product Thumbnail Container */
+.product-thumbnail-container {
+    /* ... โค้ดเดิม ... */
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+    /* ... โค้ดเดิม ... */
+}
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  
+/* -------------------------------------------
+   ส่วนที่ 0: สไตล์พื้นฐานของหน้าสินค้า (ใช้เป็นค่าเริ่มต้นสำหรับทุกขนาดจอ)
+   ------------------------------------------- */
+
+/* ภาชนะหลักของหน้าสินค้า: ใช้ Flexbox เป็นค่าเริ่มต้น (สำหรับ Desktop) */
+.product-page-container {
+    display: flex; 
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px 30px; 
+    /* เพิ่ม background-color: white; หากต้องการพื้นหลังสีขาวชัดเจน */
+    background-color: white; 
+}
+
+/* --- ส่วนของรูปภาพสินค้า (ซ้าย) --- */
+.product-images {
+    flex: 1; 
+    padding-right: 30px;
+    
+}
+
+.product-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* --- ส่วนของรายละเอียดสินค้า (ขวา) --- */
+.product-details-container {
+    flex: 1; 
+    padding-left: 30px;
+}
+
+.brand-name {
+     font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #561C24;;
+}
+
+.product-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  margin-top: -15px;
+  font-size: 32px;
+  color: #561C24;
+}
+
+.product-price {
+     font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: -15px;
+  font-size: 20px;
+  color: #000000;
+}
+
+/* ปุ่ม Add to cart */
+.add-to-cart-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #561C24; /* สีแดงเข้ม/น้ำตาล */
+color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+       font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  border-radius: 10px;  
+}
+
+.add-to-cart-btn:hover {
+    background-color: #561C24;
+}
+
+.delivery-info {
+       font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: 5px;
+  font-size: 20px;
+  color: #7C7C7C;
+}
+
+/* ส่วนหัวข้อ (Details, Introducing the perfect match) */
+.section-title {
+     font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: px;
+  color: #561C24;;
+}
+
+
+.details-text {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.details-text2 {
+    font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #561C24;;
+}
+
+/* --- ส่วนของสินค้าแนะนำ --- */
+.recommended-section {
+    margin-top: 40px;
+}
+
+.match-products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* แบ่งเป็น 2 คอลัมน์ */
+    gap: 20px;
+}
+
+.match-product-item {
+    text-align: left;
+}
+
+.product-thumbnail-container  {
+    position: relative;
+    background-color: #f0f0f0; 
+    /* 🔥 ปรับปรุง: ใช้ Aspect Ratio แทน Height คงที่ เพื่อให้กรอบยืดหยุ่นตามความกว้าง */
+    /* แต่เนื่องจากเราไม่สามารถใช้ aspect-ratio ได้ทุกที่ ให้คง height: 300px ไว้ 
+       แต่เพิ่ม overflow: hidden; */
+    height: 300px; 
+    overflow: hidden; /* ซ่อนส่วนของรูปภาพที่เกินกรอบ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #888;
+    cursor: pointer;
+}
+
+.product-name {
+      font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #561C24;;
+    margin: 5px 0 0;
+}
+
+.product-sub-name {
+       font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  color: #561C24;;
+    margin: 0;
+}
+.product-price{
+     font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #535353;;
+    margin: 0;
+}
+.match-product-image {
+    /* ทำให้รูปภาพพอดีกับขนาด Container */
+    width: 100%;
+    height: 100%;
+    /* ปรับให้รูปภาพถูกจัดให้อยู่ภายในกรอบและไม่บิดเบี้ยว */
+    object-fit: contain; 
+    /* หากรูปภาพมีพื้นหลังโปร่งใสหรือไม่เต็มพื้นที่ จะแสดงพื้นหลังสีเทาอ่อนตาม .product-thumbnail-container */
+}
+
+/* หากต้องการให้รูปภาพจัดอยู่ตรงกลางเป๊ะใน Product Thumbnail Container */
+.product-thumbnail-container {
+    /* ... โค้ดเดิม ... */
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลางแนวนอน */
+    align-items: center; /* จัดกึ่งกลางแนวตั้ง */
+    /* ... โค้ดเดิม ... */
+}
+.box{
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 60%;
+  margin-right: auto;
+/* background-color: #333; */
+}
+.navbar-brand {
+              font-family: "Oswald", sans-serif;
+            font-weight: 500;
+            font-size: 48px;
+            font-style: normal;
+            color:#561C24
+            
+        }
+          .nav-group-center {
+            display: flex;
+            justify-content: center;
+        }
+         .nav-group {
+            flex: 1;
+        }
+
+        /* กลุ่มซ้าย: จัดชิดซ้าย */
+        .nav-group-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        /* กลุ่มกลาง: จัดตรงกลาง */
+        .nav-group-center {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-brand {
+             font-family: "Mitr", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color:#561C24
+            
+        }
+        .navbar-brand:hover {
+            color: #8b3a3a;
+        }
+
+        /* กลุ่มขวา: จัดชิดขวา */
+        .nav-group-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        /* --- สไตล์ลิงก์และไอคอน --- */
+        .navbar .nav-link,
+        .navbar .menu-toggle {
+            color: #333;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 0.5rem; /* เพิ่ม padding ให้กดง่ายขึ้น */
+        }
+        .navbar .nav-link:hover,
+        .navbar .menu-toggle:hover {
+            color: #000;
+        }
+
+        /* ไอคอนใน Navbar */
+        .navbar .bi {
+            font-size: 1.3rem; 
+            vertical-align: middle;
+        }
+        .navbar .bi-list {
+            font-size: 1.7rem; /* ไอคอนเมนูใหญ่พิเศษ */
+        }
+
+        /* --- สไตล์ช่องค้นหา (search...) --- */
+        .nav-search-form {
+            padding: 0;
+            margin: 0;
+        }
+        .nav-search-input {
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            padding-left: 0.5rem;
+            font-style: italic; 
+            width: 100px; 
+        }
+        .nav-search-input:focus {
+            box-shadow: none;
+            background-color: transparent;
+            border-bottom: 1px solid #6a2b2b;
+            font-style: normal;
+            width: 150px; 
+            transition: width 0.3s ease-in-out;
+        }
+        
+        /* --- โครงสร้างหลัก Navbar --- */
+        .navbar-main {
+            display: flex;
+            /* สั่งให้ flex container จัดช่องว่างระหว่าง 'กลุ่ม' */
+            justify-content: space-between; 
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-group {
+            flex: 1;
+        }
+
+        /* กลุ่มซ้าย: จัดชิดซ้าย */
+        .nav-group-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        /* กลุ่มกลาง: จัดตรงกลาง */
+        .nav-group-center {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-brand {
+            font-family: "Oswald", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color:#561C24;
+            font-size: 48px;
+             margin: 0;
+        }
+        .navbar-brand:hover {
+            color: #8b3a3a;
+        }
+
+        /* กลุ่มขวา: จัดชิดขวา */
+      .nav-group-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1;
+            padding-right: 1rem; /* <-- เพิ่มบรรทัดนี้ */
+        }
+
+        /* --- สไตล์ลิงก์และไอคอน --- */
+        .navbar .nav-link,
+        .navbar .menu-toggle {
+            color: #333;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 0.5rem; /* เพิ่ม padding ให้กดง่ายขึ้น */
+        }
+        
+        .navbar .menu-toggle:hover {
+            color: #000;
+        }
+
+        /* ไอคอนใน Navbar */
+        .navbar .bi {
+            font-size: 1.3rem; 
+            vertical-align: middle;
+        }
+        .navbar .bi-list {
+            font-size: 1.7rem; /* ไอคอนเมนูใหญ่พิเศษ */
+        }
+
+        /* --- สไตล์ช่องค้นหา (search...) --- */
+        .nav-search-form {
+            
+            padding: 0;
+            margin: 0;
+        }
+        .nav-search-input {
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            padding-left: 0.5rem;
+            font-style: italic; 
+            width: 100px; 
+        }
+        .nav-search-input:focus {
+            box-shadow: none;
+            background-color: transparent;
+            border-bottom: 1px solid #6a2b2b;
+            font-style: normal;
+            width: 150px; 
+            transition: width 0.3s ease-in-out;
+        }
+}

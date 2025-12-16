@@ -1,0 +1,3354 @@
+.card-product-card{
+  
+    width: 100%;
+    height: auto    ;
+    
+}
+.mitr-extralight {
+  font-family: "Mitr", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.mitr-light {
+  font-family: "Mitr", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.mitr-regular {
+  font-family: "Mitr", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mitr-medium {
+  font-family: "Mitr", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.mitr-semibold {
+  font-family: "Mitr", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.mitr-bold {
+  font-family: "Mitr", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    /* background-color: #000; */
+    border-bottom: 2px solid #ff0000;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.tab-link.active {
+    color: #8b3c48; /* สีน้ำตาลแดงตามรูป */
+    border-bottom-color: #8b3c48;
+}
+
+/* --- Form Content --- */
+.welcome-message {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #999;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.form-content form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #8b3c48; /* สีน้ำตาลแดง */
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* --- Separator --- */
+.or-separator {
+    text-align: center;
+    color: #999;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+/* --- Social Buttons --- */
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.line-btn {
+    background-color: #4CAF50; /* สีเขียว LINE */
+    color: white;
+    font-weight: bold;
+}
+
+.google-btn {
+    background-color: white;
+    color: #555;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+/* ไอคอนจาก Font Awesome สำหรับ LINE (หากใช้) */
+.line-btn .fab {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* --- One-time Link --- */
+.onetime-link {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.onetime-link i {
+    margin-right: 5px;
+    color: #8b3c48;
+}
+
+/* --- Main Sign In Button --- */
+.sign-in-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #8b3c48; /* สีหลักตามรูป */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #a04956;
+}
+/* 4. Custom CSS */
+        
+    
+        .nav-group {
+            flex: 1;
+        }
+
+        /* กลุ่มซ้าย: จัดชิดซ้าย */
+        .nav-group-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        /* กลุ่มกลาง: จัดตรงกลาง */
+        .nav-group-center {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-brand {
+             font-family: "Mitr", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color:#561C24
+            
+        }
+        .navbar-brand:hover {
+            color: #8b3a3a;
+        }
+
+        /* กลุ่มขวา: จัดชิดขวา */
+        .nav-group-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        /* --- สไตล์ลิงก์และไอคอน --- */
+        .navbar .nav-link,
+        .navbar .menu-toggle {
+            color: #333;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 0.5rem; /* เพิ่ม padding ให้กดง่ายขึ้น */
+        }
+        .navbar .nav-link:hover,
+        .navbar .menu-toggle:hover {
+            color: #000;
+        }
+
+        /* ไอคอนใน Navbar */
+        .navbar .bi {
+            font-size: 1.3rem; 
+            vertical-align: middle;
+        }
+        .navbar .bi-list {
+            font-size: 1.7rem; /* ไอคอนเมนูใหญ่พิเศษ */
+        }
+
+        /* --- สไตล์ช่องค้นหา (search...) --- */
+        .nav-search-form {
+            padding: 0;
+            margin: 0;
+        }
+        .nav-search-input {
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            padding-left: 0.5rem;
+            font-style: italic; 
+            width: 100px; 
+        }
+        .nav-search-input:focus {
+            box-shadow: none;
+            background-color: transparent;
+            border-bottom: 1px solid #6a2b2b;
+            font-style: normal;
+            width: 150px; 
+            transition: width 0.3s ease-in-out;
+        }
+        
+        /* --- โครงสร้างหลัก Navbar --- */
+        .navbar-main {
+            display: flex;
+            /* สั่งให้ flex container จัดช่องว่างระหว่าง 'กลุ่ม' */
+            justify-content: space-between; 
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-group {
+            flex: 1;
+        }
+
+        /* กลุ่มซ้าย: จัดชิดซ้าย */
+        .nav-group-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        /* กลุ่มกลาง: จัดตรงกลาง */
+        .nav-group-center {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-brand {
+            font-family: "Oswald", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color:#561C24;
+            font-size: 48px;
+             margin: 0;
+        }
+        .navbar-brand:hover {
+            color: #8b3a3a;
+        }
+
+        /* กลุ่มขวา: จัดชิดขวา */
+      .nav-group-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1;
+            padding-right: 1rem; /* <-- เพิ่มบรรทัดนี้ */
+        }
+
+        /* --- สไตล์ลิงก์และไอคอน --- */
+        .navbar .nav-link,
+        .navbar .menu-toggle {
+            color: #333;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 0.5rem; /* เพิ่ม padding ให้กดง่ายขึ้น */
+        }
+        
+        .navbar .menu-toggle:hover {
+            color: #000;
+        }
+
+        /* ไอคอนใน Navbar */
+        .navbar .bi {
+            font-size: 1.3rem; 
+            vertical-align: middle;
+        }
+        .navbar .bi-list {
+            font-size: 1.7rem; /* ไอคอนเมนูใหญ่พิเศษ */
+        }
+
+        /* --- สไตล์ช่องค้นหา (search...) --- */
+        .nav-search-form {
+            
+            padding: 0;
+            margin: 0;
+        }
+        .nav-search-input {
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            padding-left: 0.5rem;
+            font-style: italic; 
+            width: 100px; 
+        }
+        .nav-search-input:focus {
+            box-shadow: none;
+            background-color: transparent;
+            border-bottom: 1px solid #6a2b2b;
+            font-style: normal;
+            width: 150px; 
+            transition: width 0.3s ease-in-out;
+        }
+    .mitr-bold {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #6a2b2b;;
+ 
+}
+
+  .mitr-boldtwo{
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+font-size: 16px;
+  color: #6a2b2b;;
+  font-style: normal;
+}
+ .mitr-boldtwow{
+font-size: 48px;
+font-family: "Oswald", sans-serif;
+font-weight: 700;
+font-size: 16px;
+color: #6a2b2b;;
+ font-style: normal;
+}
+
+.textpopular{
+    font-size: 42px;
+    text-align: center;
+    color: #6a2b2b;
+    margin-top: 40px;
+    
+}
+/* สำหรับหัวข้อ "Popular products" */
+.popular-products-title {
+  font-size: 2.5rem; /* ทำให้หัวข้อใหญ่ขึ้น */
+  font-weight: bold; /* ทำให้ตัวหนาขึ้น */
+  color: #ffffff; /* ปรับสี (ถ้าต้องการ) */
+}
+
+/* สำหรับข้อความภายใน Box 1, 2, 3 */
+.box-content {
+  min-height: 370px; /* กำหนดความสูงขั้นต่ำของแต่ละ Box เพื่อให้ Box ดูใหญ่ขึ้น */
+  display: flex; /* ใช้ flexbox เพื่อจัดข้อความตรงกลางแนวตั้ง */
+  align-items: right; 
+  justify-content: right; /* จัดกลางแนวนอน */
+  font-size: 1.5rem; /* ขนาดตัวอักษรใน Box ให้ใหญ่ขึ้น */
+  font-weight: 500; /* น้ำหนักตัวอักษร */
+  border-radius: 8px; /* ทำให้ขอบมนขึ้นเล็กน้อย */
+  box-shadow: 0 4px 8px rgba(0,0,0,.05); /* เพิ่มเงาเล็กน้อยเพื่อให้ดูมีมิติ */
+}
+.card-product-card{
+ 
+    width: 330;
+    height: auto    ;
+    
+}
+/* จัดสไตล์กล่อง .card ให้อยู่ตรงกลาง */
+.product-card {
+  border: none;
+  text-align: center; 
+}
+
+/* ทำให้กล่องรูปภาพสูงเท่ากัน */
+.product-image-container {
+  position: relative;
+  background-color: #f8f8f8;
+  padding: 25px;
+  border-radius: 7px;
+  margin: 2px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+  width: 100%;
+  height: 370px; /* <-- กำหนดความสูงคงที่ */
+
+}
+
+/* จัดการรูปภาพข้างใน */
+.product-actual-image {
+  
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* ไอคอนหัวใจ (เหมือนเดิม) */
+.product-wishlist-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+.product-wishlist-icon:hover {
+  color: #dc3545;
+}
+
+
+/* จัดสไตล์ส่วนข้อความ (ที่เพิ่มเข้ามาใหม่) */
+.product-card .card-body {
+  padding: 1rem 0.5rem; /* เพิ่มช่องว่างบน-ล่าง */
+}
+
+.product-card .card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.product-card .product-brand {
+  font-size: 0.95rem;
+  color: #6c757d; /* สีเทา */
+  margin-bottom: 0.25rem;
+}
+
+.product-card .product-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+.card-body{
+  /* background-color: #747474; */
+
+  /* margin-left: 10px; */
+}
+/* อักษรชิดซ้าย */
+.textt23{
+  text-align: left
+}
+.fonts1{
+   font-family: "Oswald", sans-serif;
+  font-weight: 700;
+font-size: 32px;
+  color: #561C24;;
+  font-style: normal;
+}
+.fonts2{
+   font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  margin-top: -8px;
+font-size: 28px;
+  color: #6D2932;;
+  font-style: normal;
+}
+.fonts3{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: -18px;
+font-size: 24px;
+  color: #919191;;
+  font-style: normal;
+
+}
+.textpopulars2{
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: 300;
+    font-size: 24px;
+    color: #6a2b2b;
+    
+    
+}
+/* ========== Promo Box Styles ========== */
+
+.promo-box {
+  /* ใช้สีแดงเข้มที่คุณเคยใช้ */
+  background-color: #6a2b2b; 
+  color: #ffffff; /* ตัวอักษรสีขาว */
+  padding: 2rem;   /* เว้นช่องว่างภายใน 2rem (ประมาณ 32px) */
+  border-radius: 10px; /* ทำให้ขอบมน */
+  height: 100%; /* ทำให้ 2 กล่องสูงเท่ากัน */
+  
+  /* ตั้งค่าเผื่อให้ row ข้างในอยู่ตรงกลางแนวตั้ง */
+  display: flex;
+  text-align: left;
+}
+
+.promo-title {
+  /* ใช้ฟอนต์ Oswald ที่คุณมี */
+  font-family: "Oswald", sans-serif;
+  font-weight: 700; /* ตัวหนา */
+  font-size: 2.25rem; /* ขนาด 36px (ปรับได้ตามชอบ) */
+  margin-bottom: 0.75rem;
+}
+
+.promo-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400; /* ความหนาปกติ */
+  font-size: 1.1rem;
+  opacity: 0.9; /* ทำให้จางลงเล็กน้อย */
+}
+.img-fluid{
+  height: 100%;
+}
+.font4{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: -18px;
+  font-size: 18px;
+  color: #9c9c9c;;
+  font-style: normal;
+}
+.font4foot{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #D5D5D5;;
+  font-style: normal;
+}
+
+
+.font001{
+   font-family: "Oswald", sans-serif;
+  font-weight: 700;
+font-size: 32px;
+  color: #561C24  ;
+  font-style: normal;
+}
+.textpopulars{
+    font-size: 42px;
+    text-align: center;
+    color: #561C24  ;
+    margin-top: 40px;
+    
+}
+.foot{
+  background-color: #561C24;
+  width: 1479.01px;
+  height: 241px;
+}
+/* 1. พื้นหลังเต็มหน้าจอ */
+.footerwidth {
+    width: 100%;
+    height: 190px; 
+
+    background-color: #5d2828; 
+    margin: 0; 
+    padding: 0;
+}
+
+
+/* จัดการ Layout ภายในกล่อง */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+   
+}
+
+.footer-social {
+    /* จัดไอคอนให้อยู่ตรงกลาง */
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* ระยะห่างระหว่างไอคอน */
+    color: ;
+    padding-top: 100px;
+    color: #D5D5D5;
+}
+.box{
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 60%;
+  margin-right: auto;
+/* background-color: #333; */
+}
+.overlay-text {
+    /* **จัดตำแหน่งแบบ absolute เพื่อให้อยู่ทับภาพ** */
+    position: absolute;
+    /* จัดกึ่งกลางในแนวนอนและแนวตั้ง (หรือจะกำหนด top/left/right/bottom ก็ได้) */
+     /* เริ่มต้นที่ 50% จากด้านบน */
+   /* เริ่มต้นที่ 50% จากด้านซ้าย */
+    transform: translate(-50%, -50%); /* เลื่อนกลับมาครึ่งหนึ่งของขนาดตัวเองเพื่อให้อยู่กึ่งกลางจริงๆ */
+    /* จัดรูปแบบข้อความ */
+    color: white; /* สีข้อความ */
+    background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งแสงเล็กน้อย */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 80%; /* ความกว้างของกล่องข้อความ */
+    max-width: 500px; /* จำกัดความกว้างสูงสุด */
+}
+.A {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: wheat;
+}
+
+.top-left {
+  position: absolute;
+  /* background-color: #333; */
+  text-align: left;
+ width: 60%;
+  top: 60px;
+  left: 50px;
+}
+.Newcollection{
+font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 198px;
+  color: #ffffff;;
+} 
+.Discount{
+font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  color: #ffffff;;
+} 
+.shop-now-button {
+    display: inline-block;
+    background-color: #561C24; /* สีแดงเข้มตามภาพ */
+    color: white;
+    width: 30%;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+    border-radius: 10px;
+    font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+
+   /* เพิ่ม Transition เมื่อ hover */
+}
+.Newcollection2{
+font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 198px;
+  color: #ffffff;;
+} 
+.Discount2{
+font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  color: #ffffff;
+}
+.Newcollection3{
+font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 198px;
+  color: #ffffff;;
+} 
+.Discount3{
+font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  color: #ffffff;
+}  
+.boxlogin{
+  width: 300;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+}
+
+
+/* ---------หน้า login------------------ */
+.fonts23{
+   font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  /* margin-top: -8px; */
+font-size: 27px;
+  color: #6D2932;;
+  font-style: normal;
+}
+.account-container {
+    width: 100%;
+    max-width: 450px; /* ปรับขนาดตามต้องการ */
+    margin-top: 100px;
+    /* background-color: #ffffff; */
+   margin-left: auto;
+   margin-right: auto;
+    text-align: center;
+}
+.fontssignin{
+   font-family: "Oswald", sans-serif;
+  font-weight: 400;
+font-size: 22px;
+  color: #561C24;
+  font-style: normal;
+}
+
+/* --- Tabs (SIGN IN / REGISTER) --- */
+.header-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+    margin-bottom: 30px;
+    /* background-color: #000; */
+    border-bottom: 2px solid #9e9e9e;
+}
+.header-tabs2{
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+    margin-bottom: 30px;
+    /* background-color: #000; */
+    border-bottom: 2px solid #9e9e9e;
+}
+
+.tab-link {
+       padding: 10px 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 0 80px;
+    text-transform: uppercase;
+    position: relative;
+
+    /* --- เพิ่มบรรทัดนี้ --- */
+    white-space: nowrap; 
+}
+
+.tab-link2 {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 0 80px;
+    text-transform: uppercase;
+    position: relative;
+
+    /* --- เพิ่มบรรทัดนี้ --- */
+    white-space: nowrap; 
+}
+
+.tab-link.active {
+  width: 200px;
+    color: #8b3c48; /* สีน้ำตาลแดงตามรูป */
+    border-bottom-color: #8b3c48;
+}
+.tab-link.active2 {
+  width: 200px;
+    color: #8b3c48; /* สีน้ำตาลแดงตามรูป */
+    border-bottom-color: #8b3c48;
+}
+
+
+/* --- Form Content --- */
+.welcome-message {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+     font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  /* margin-top: -8px; */
+font-size: 16px;
+  color: #6D2932;;
+  font-style: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+}
+
+.form-content form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #6D2932;;
+  font-style: normal;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    /* color: #333; */
+
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: left;
+     color: #6D2932;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+     font-family: "Oswald", sans-serif;
+  font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* --- Separator --- */
+.or-separator {
+    text-align: center;
+ font-weight: 400;
+font-style: normal;
+font-family: "Oswald", sans-serif;
+    color: #6D2932;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+/* --- Social Buttons --- */
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.line-btn {
+    background-color: #4CAF50; /* สีเขียว LINE */
+    color: white;
+    font-weight: 400;
+font-style: normal;
+font-family: "Oswald", sans-serif;
+font-size: 16px;
+}
+
+.google-btn {
+    background-color: white;
+    color: #6D2932;
+    border: 1px solid #ccc;
+     font-weight: 400;
+font-style: normal;
+font-family: "Oswald", sans-serif;
+font-size: 16px;
+}
+
+/* ไอคอนจาก Font Awesome สำหรับ LINE (หากใช้) */
+.line-btn .fab {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* --- One-time Link --- */
+.onetime-link {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #6D2932;;
+     font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.onetime-link i {
+    margin-right: 5px;
+    color: #8b3c48;
+}
+
+/* --- Main Sign In Button --- */
+.sign-in-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #8b3c48; /* สีหลักตามรูป */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #a04956;
+}
+.textt{
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  /* margin-top: -8px; */
+font-size: 23px;
+  color: #6D2932;;
+  font-style: normal;
+}
+.textt2{
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  /* margin-top: -8px; */
+font-size: 15px;
+  color: #6D2932;;
+  font-style: normal;
+}
+.textt12{
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  /* margin-top: -8px; */
+font-size: 15px;
+  color: #6D2932;;
+  font-style: normal;
+}
+/* --- CSS สำหรับฟอร์ม Register (เพิ่มเข้าไป) --- */
+
+/* 1. สไตล์สำหรับ <select> (ช่อง Birthday) */
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #999; /* สีของ placeholder "Birthday" */
+    
+    /* ซ่อนลูกศร Dropdown เริ่มต้น */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* เพิ่มลูกศร 'v' แบบกำหนดเอง (เหมือนในภาพ) */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* 2. เมื่อผู้ใช้เลือกตัวเลือกแล้ว ให้เปลี่ยนสีตัวอักษรเป็นสีเข้ม */
+.input-group select:valid {
+    color: #333;
+}
+
+/* 3. สไตล์สำหรับข้อความ Checkbox ยินยอม */
+.agreement-check .form-check-label {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+    text-align: left; /* จัดให้อยู่ชิดซ้าย */
+}
+.navbar-main {
+  /* ทำให้เป็น Flex container และจัดชิดขอบ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* ====================================
+   1. LOGIN/FORM STYLES
+   ==================================== */
+
+.welcome-message {
+    font-size: 18px; /* ปรับลด */
+    color: #333;
+    margin-bottom: 3px;
+}
+.img-fluid{
+  height: 80%;
+  width: 80%;
+}
+
+.subtitle {
+    color: #999;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 12px; /* ปรับลด */
+}
+
+.form-content form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 15px; /* ปรับลด */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 12px; /* ปรับลด */
+    font-weight: bold;
+}
+.promo-scroll-container {
+    display: flex;
+    flex-wrap: nowrap; /* ห้ามขึ้นบรรทัดใหม่ */
+    overflow-x: scroll; 
+    padding: 0 15px; /* เพิ่ม Padding ด้านข้างเล็กน้อย */
+    
+    /* ❌ ซ่อน Scrollbar */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.promo-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 8px; /* ปรับลด */
+    font-size: 14px; /* ปรับลด */
+}
+
+.forgot-password {
+    font-size: 12px; /* ปรับลด */
+    margin-bottom: 15px;
+}
+
+/* --- Separator --- */
+.or-separator {
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+/* --- Social Buttons --- */
+.social-btn {
+    width: 100%;
+    padding: 8px; /* ปรับลด */
+    margin-bottom: 8px;
+    font-size: 14px; /* ปรับลด */
+}
+
+.social-icon {
+    width: 18px; /* ปรับลด */
+    height: 18px;
+    margin-right: 8px;
+}
+
+.line-btn .fab {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* --- One-time Link --- */
+.onetime-link {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* --- Main Sign In Button --- */
+.sign-in-btn {
+    width: 100%;
+    padding: 10px; /* ปรับลด */
+    font-size: 16px; /* ปรับลด */
+}
+
+/* Login Box (เพิ่ม Max-width และ Center สำหรับ Mobile Layout) */
+.boxlogin{
+    width: 90%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.accordion-button {
+    /* ... (โค้ดเดิมของคุณ เช่น background-color, color, font-weight, padding, box-shadow) ... */
+}
+
+/* ตั้งค่าเริ่มต้น: ไอคอน + เมื่อ Accordion ถูกพับอยู่ (Collapsed) */
+.accordion-button::after {
+    /* สำคัญ: ลบ background-image ของ Bootstrap ออก */
+    background-image: none !important; 
+    
+    /* แสดงข้อความ '+' แทน */
+    content: '+'; 
+    
+    /* สไตล์ของไอคอน */
+    font-size: 1.5rem; /* ปรับขนาดให้ใหญ่ขึ้นเล็กน้อย */
+    color: #561C24; /* ใช้สีเข้มตามธีมของคุณ */
+    font-weight: bold; /* ทำให้ + ดูหนาขึ้น */
+    
+    /* จัดตำแหน่งไอคอนให้อยู่ทางขวา */
+    margin-left: auto; /* ดันไอคอนไปทางขวา */
+    flex-shrink: 0; /* ป้องกันไม่ให้หดตัว */
+    width: auto; /* ปรับความกว้างให้เหมาะสมกับ content */
+
+    /* ไม่ต้อง transform: rotate; เพราะเราเปลี่ยน content แล้ว */
+    transform: none !important; /* ลบการหมุนเดิม */
+}
+
+/* ตั้งค่าเมื่อ Accordion ถูกกางออก (Not Collapsed) */
+.accordion-button:not(.collapsed)::after {
+    /* สำคัญ: ลบ background-image ของ Bootstrap ออกอีกครั้ง (ในกรณีที่ถูก override) */
+    background-image: none !important; 
+    
+    /* แสดงข้อความ '-' แทน */
+    content: '-'; 
+    
+    /* สไตล์ของไอคอน (สามารถปรับให้ต่างจาก + ได้หากต้องการ) */
+    font-size: 1.5rem; 
+    color: #561C24;
+    font-weight: bold;
+
+    /* ไม่ต้อง transform: rotate; */
+    transform: none !important; 
+}
+
+/* เพิ่มเติม: จัด Padding ให้หัวข้อ Accordion Button */
+.accordion-button {
+    padding: 1rem 0; /* เพื่อให้เนื้อหาและไอคอนมีระยะห่างจากขอบ */
+    /* ถ้าต้องการให้หัวข้อมี padding ด้านซ้าย ให้ปรับ padding-left: 1rem; */
+}
+
+/* เพิ่มเติม: จัด Padding ให้เนื้อหา Accordion Body */
+.accordion-body {
+    padding: 0 0 1rem 0; /* เพื่อให้เนื้อหามีระยะห่างจากขอบด้านล่าง */
+    /* ถ้าต้องการให้เนื้อหามี padding ด้านซ้าย ให้ปรับ padding-left: 1rem; */
+}
+
+/* ====================================
+   2. NAVBAR STYLES
+   ==================================== */
+
+.navbar-main {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem; /* ลด padding โดยรวม */
+}
+
+.nav-group {
+    flex: 1;
+}
+
+.nav-group-right {
+    padding-right: 0.5rem;
+}
+
+.navbar-brand {
+    font-size: 30px; /* ปรับลด */
+}
+
+/* --- ลิงก์และไอคอน --- */
+.navbar .nav-link,
+.navbar .menu-toggle {
+    font-size: 1rem; /* ปรับลด */
+    padding: 0.25rem; /* ปรับลด */
+}
+
+.navbar .bi {
+    font-size: 1.1rem; /* ปรับลด */
+}
+.navbar .bi-list {
+    font-size: 1.5rem; /* ปรับลด */
+}
+
+/* --- ช่องค้นหา (search...) --- */
+.nav-search-input {
+    width: 60px; /* ปรับลดความกว้างเริ่มต้น */
+    font-size: 14px;
+}
+.nav-search-input:focus {
+    width: 100px; /* ปรับลดความกว้างเมื่อโฟกัส */
+}
+
+
+/* ====================================
+   3. FONT STYLES (ปรับขนาด Font หลัก)
+   ==================================== */
+
+.mitr-bold {
+    font-size: 24px;
+}
+.mitr-boldtwo, .mitr-boldtwow {
+    font-size: 14px; /* ปรับลด */
+}
+.textpopular {
+    font-size: 24px; /* ปรับลด */
+    text-align: left;
+    margin-top: 20px;
+}
+.textpopulars2 {
+    font-size: 14px; /* ปรับลด */
+    text-align: left;
+    margin-top: -10px;
+}
+.promo-scroll-container {
+    display: flex;
+    flex-wrap: nowrap; /* ห้ามขึ้นบรรทัดใหม่ */
+    overflow-x: scroll; 
+    padding: 0 15px; /* เพิ่ม Padding ด้านข้างเล็กน้อย */
+    
+    /* ❌ ซ่อน Scrollbar */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.promo-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* ====================================
+   4. PRODUCT CARD STYLES
+   ==================================== */
+
+.popular-products-title {
+    font-size: 2rem; /* ปรับลด */
+}
+
+.box-content {
+    min-height: 250px; /* ปรับลดความสูงขั้นต่ำ */
+    font-size: 1.2rem; /* ปรับลด */
+}
+
+.product-image-container {
+    padding: 5px; /* ปรับลด */
+    height: 250px; /* ปรับลดความสูงคงที่ */
+}
+
+.product-wishlist-icon {
+    top: 10px;
+    right: 10px;
+    font-size: 1.1rem;
+}
+
+.product-card .card-body {
+  padding: 1rem 0.5rem; /* เพิ่มช่องว่างบน-ล่าง */
+}
+
+.product-card .card-title {
+    font-size: 1rem; /* ปรับลด */
+}
+
+
+.product-card .product-brand {
+    font-size: 0.85rem; /* ปรับลด */
+}
+
+.product-card .product-price {
+    font-size: 0.9rem; /* ปรับลด */
+}
+
+/* รายละเอียดสินค้า (Fonts) */
+.fonts1 {
+    font-size: 18px; /* ปรับลด */
+
+}
+.fonts2 {
+    font-size: 18px; /* ปรับลด */
+    margin-top: -5px;
+}
+.fonts3 {
+    font-size: 14px; /* ปรับลด */
+    margin-top: -10px;
+}
+.font4 {
+    font-size: 13px; /* ปรับลด */
+}
+.font001 {
+    font-size: 16px; /* ปรับลด */
+}
+.textpopulars {
+    font-size: 32px; /* ปรับลด */
+    margin-top: 20px;
+    
+}
+
+
+/* ====================================
+   5. PROMO BOX STYLES
+   ==================================== */
+
+.promo-box {
+    margin-top: 15px;
+    padding: 1.5rem; /* ปรับลด */
+}
+
+.promo-title {
+    font-size: 20px; /* ปรับลด */
+}
+
+.promo-text {
+    font-size: 12px; /* ปรับลด */
+}
+
+/* ====================================
+   6. BANNER (A) STYLES
+   ==================================== */
+
+.A {
+    margin-bottom: 20px;
+}
+
+.top-left {
+    top: 20px; /* ปรับตำแหน่ง */
+    left: 15px; /* ปรับตำแหน่ง */
+    width: 90%; /* ใช้พื้นที่มากขึ้นบนมือถือ */
+}
+
+.Newcollection, .Newcollection2, .Newcollection3 {
+    font-size: 32px; /* ปรับลด */
+}
+
+.Discount, .Discount2, .Discount3 {
+    font-size: 20px; /* ปรับลด */
+}
+
+.shop-now-button {
+    width: 150px; /* กำหนดความกว้างที่ชัดเจนขึ้น */
+    padding: 10px 20px; /* ปรับลด */
+    font-size: 18px; /* ปรับลด */
+    border-radius: 5px;
+}
+
+/* ====================================
+   7. FOOTER STYLES
+   ==================================== */
+
+.footerwidth {
+   /* W 448 (ความกว้าง - Width) */
+    width: 100%; 
+    
+    /* H 73 (ความสูง - Height) */
+    height: 100%;
+    
+    /* เพิ่ม border-radius เพื่อให้ขอบมนเหมือนในภาพ (ถ้าต้องการ) */
+    
+}
+
+.footer-social {
+    gap: 15px; /* ปรับลดระยะห่าง */
+    padding-top: 30px; /* ปรับลด */
+    padding-bottom: 15px;
+}
+
+.font4foot {
+    font-size: 14px; /* ปรับลด */
+}
+
+/* การจัด Layout หลัก */
+.box {
+    width: 90%; /* ให้ใช้ความกว้าง 90% ของหน้าจอ */
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-list-container {
+    display: flex;
+    overflow-x: scroll; 
+    scrollbar-width: none; /* สำหรับ Firefox */
+    -ms-overflow-style: none; /* สำหรับ IE/Edge */
+    flex-wrap: nowrap; 
+    padding: 0 1px; /* เพิ่ม padding ด้านข้างสำหรับ Mobile */
+    -webkit-overflow-scrolling: touch; 
+}
+
+/* ซ่อน Scrollbar สำหรับ Webkit (Chrome, Safari) */
+.product-list-container::-webkit-scrollbar {
+    display: none;
+}
+
+        
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 430px) {
+.navbar-main {
+  /* ทำให้เป็น Flex container และจัดชิดขอบ */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* ====================================
+   1. LOGIN/FORM STYLES
+   ==================================== */
+
+.welcome-message {
+    font-size: 18px; /* ปรับลด */
+    color: #333;
+    margin-bottom: 3px;
+}
+.img-fluid{
+  height: 80%;
+  width: 80%;
+}
+
+.subtitle {
+    color: #999;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 12px; /* ปรับลด */
+}
+
+.form-content form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 15px; /* ปรับลด */
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 12px; /* ปรับลด */
+    font-weight: bold;
+}
+.promo-scroll-container {
+    display: flex;
+    flex-wrap: nowrap; /* ห้ามขึ้นบรรทัดใหม่ */
+    overflow-x: scroll; 
+    padding: 0 15px; /* เพิ่ม Padding ด้านข้างเล็กน้อย */
+    
+    /* ❌ ซ่อน Scrollbar */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.promo-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 8px; /* ปรับลด */
+    font-size: 14px; /* ปรับลด */
+}
+
+.forgot-password {
+    font-size: 12px; /* ปรับลด */
+    margin-bottom: 15px;
+}
+
+/* --- Separator --- */
+.or-separator {
+    margin: 15px 0;
+    font-size: 12px;
+}
+
+/* --- Social Buttons --- */
+.social-btn {
+    width: 100%;
+    padding: 8px; /* ปรับลด */
+    margin-bottom: 8px;
+    font-size: 14px; /* ปรับลด */
+}
+
+.social-icon {
+    width: 18px; /* ปรับลด */
+    height: 18px;
+    margin-right: 8px;
+}
+
+.line-btn .fab {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* --- One-time Link --- */
+.onetime-link {
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* --- Main Sign In Button --- */
+.sign-in-btn {
+    width: 100%;
+    padding: 10px; /* ปรับลด */
+    font-size: 16px; /* ปรับลด */
+}
+
+/* Login Box (เพิ่ม Max-width และ Center สำหรับ Mobile Layout) */
+.boxlogin{
+    width: 90%;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.accordion-button {
+    /* ... (โค้ดเดิมของคุณ เช่น background-color, color, font-weight, padding, box-shadow) ... */
+}
+
+/* ตั้งค่าเริ่มต้น: ไอคอน + เมื่อ Accordion ถูกพับอยู่ (Collapsed) */
+.accordion-button::after {
+    /* สำคัญ: ลบ background-image ของ Bootstrap ออก */
+    background-image: none !important; 
+    
+    /* แสดงข้อความ '+' แทน */
+    content: '+'; 
+    
+    /* สไตล์ของไอคอน */
+    font-size: 1.5rem; /* ปรับขนาดให้ใหญ่ขึ้นเล็กน้อย */
+    color: #561C24; /* ใช้สีเข้มตามธีมของคุณ */
+    font-weight: bold; /* ทำให้ + ดูหนาขึ้น */
+    
+    /* จัดตำแหน่งไอคอนให้อยู่ทางขวา */
+    margin-left: auto; /* ดันไอคอนไปทางขวา */
+    flex-shrink: 0; /* ป้องกันไม่ให้หดตัว */
+    width: auto; /* ปรับความกว้างให้เหมาะสมกับ content */
+
+    /* ไม่ต้อง transform: rotate; เพราะเราเปลี่ยน content แล้ว */
+    transform: none !important; /* ลบการหมุนเดิม */
+}
+
+/* ตั้งค่าเมื่อ Accordion ถูกกางออก (Not Collapsed) */
+.accordion-button:not(.collapsed)::after {
+    /* สำคัญ: ลบ background-image ของ Bootstrap ออกอีกครั้ง (ในกรณีที่ถูก override) */
+    background-image: none !important; 
+    
+    /* แสดงข้อความ '-' แทน */
+    content: '-'; 
+    
+    /* สไตล์ของไอคอน (สามารถปรับให้ต่างจาก + ได้หากต้องการ) */
+    font-size: 1.5rem; 
+    color: #561C24;
+    font-weight: bold;
+
+    /* ไม่ต้อง transform: rotate; */
+    transform: none !important; 
+}
+
+/* เพิ่มเติม: จัด Padding ให้หัวข้อ Accordion Button */
+.accordion-button {
+    padding: 1rem 0; /* เพื่อให้เนื้อหาและไอคอนมีระยะห่างจากขอบ */
+    /* ถ้าต้องการให้หัวข้อมี padding ด้านซ้าย ให้ปรับ padding-left: 1rem; */
+}
+
+/* เพิ่มเติม: จัด Padding ให้เนื้อหา Accordion Body */
+.accordion-body {
+    padding: 0 0 1rem 0; /* เพื่อให้เนื้อหามีระยะห่างจากขอบด้านล่าง */
+    /* ถ้าต้องการให้เนื้อหามี padding ด้านซ้าย ให้ปรับ padding-left: 1rem; */
+}
+
+/* ====================================
+   2. NAVBAR STYLES
+   ==================================== */
+
+.navbar-main {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem; /* ลด padding โดยรวม */
+}
+
+.nav-group {
+    flex: 1;
+}
+
+.nav-group-right {
+    padding-right: 0.5rem;
+}
+
+.navbar-brand {
+    font-size: 30px; /* ปรับลด */
+}
+
+/* --- ลิงก์และไอคอน --- */
+.navbar .nav-link,
+.navbar .menu-toggle {
+    font-size: 1rem; /* ปรับลด */
+    padding: 0.25rem; /* ปรับลด */
+}
+
+.navbar .bi {
+    font-size: 1.1rem; /* ปรับลด */
+}
+.navbar .bi-list {
+    font-size: 1.5rem; /* ปรับลด */
+}
+
+/* --- ช่องค้นหา (search...) --- */
+.nav-search-input {
+    width: 60px; /* ปรับลดความกว้างเริ่มต้น */
+    font-size: 14px;
+}
+.nav-search-input:focus {
+    width: 100px; /* ปรับลดความกว้างเมื่อโฟกัส */
+}
+
+
+/* ====================================
+   3. FONT STYLES (ปรับขนาด Font หลัก)
+   ==================================== */
+
+.mitr-bold {
+    font-size: 24px;
+}
+.mitr-boldtwo, .mitr-boldtwow {
+    font-size: 14px; /* ปรับลด */
+}
+.textpopular {
+    font-size: 24px; /* ปรับลด */
+    text-align: left;
+    margin-top: 20px;
+}
+.textpopulars2 {
+    font-size: 14px; /* ปรับลด */
+    text-align: left;
+    margin-top: -10px;
+}
+.promo-scroll-container {
+    display: flex;
+    flex-wrap: nowrap; /* ห้ามขึ้นบรรทัดใหม่ */
+    overflow-x: scroll; 
+    padding: 0 15px; /* เพิ่ม Padding ด้านข้างเล็กน้อย */
+    
+    /* ❌ ซ่อน Scrollbar */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.promo-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* ====================================
+   4. PRODUCT CARD STYLES
+   ==================================== */
+
+.popular-products-title {
+    font-size: 2rem; /* ปรับลด */
+}
+
+.box-content {
+    min-height: 250px; /* ปรับลดความสูงขั้นต่ำ */
+    font-size: 1.2rem; /* ปรับลด */
+}
+
+.product-image-container {
+    padding: 5px; /* ปรับลด */
+    height: 250px; /* ปรับลดความสูงคงที่ */
+}
+
+.product-wishlist-icon {
+    top: 10px;
+    right: 10px;
+    font-size: 1.1rem;
+}
+
+.product-card .card-body {
+  padding: 1rem 0.5rem; /* เพิ่มช่องว่างบน-ล่าง */
+}
+
+.product-card .card-title {
+    font-size: 1rem; /* ปรับลด */
+}
+
+
+.product-card .product-brand {
+    font-size: 0.85rem; /* ปรับลด */
+}
+
+.product-card .product-price {
+    font-size: 0.9rem; /* ปรับลด */
+}
+
+/* รายละเอียดสินค้า (Fonts) */
+.fonts1 {
+    font-size: 18px; /* ปรับลด */
+
+}
+.fonts2 {
+    font-size: 18px; /* ปรับลด */
+    margin-top: -5px;
+}
+.fonts3 {
+    font-size: 14px; /* ปรับลด */
+    margin-top: -10px;
+}
+.font4 {
+    font-size: 13px; /* ปรับลด */
+}
+.font001 {
+    font-size: 16px; /* ปรับลด */
+}
+.textpopulars {
+    font-size: 32px; /* ปรับลด */
+    margin-top: 20px;
+    
+}
+
+
+/* ====================================
+   5. PROMO BOX STYLES
+   ==================================== */
+
+.promo-box {
+    margin-top: 15px;
+    padding: 1.5rem; /* ปรับลด */
+}
+
+.promo-title {
+    font-size: 20px; /* ปรับลด */
+}
+
+.promo-text {
+    font-size: 12px; /* ปรับลด */
+}
+
+/* ====================================
+   6. BANNER (A) STYLES
+   ==================================== */
+
+.A {
+    margin-bottom: 20px;
+}
+
+.top-left {
+    top: 20px; /* ปรับตำแหน่ง */
+    left: 15px; /* ปรับตำแหน่ง */
+    width: 90%; /* ใช้พื้นที่มากขึ้นบนมือถือ */
+}
+
+.Newcollection, .Newcollection2, .Newcollection3 {
+    font-size: 32px; /* ปรับลด */
+}
+
+.Discount, .Discount2, .Discount3 {
+    font-size: 20px; /* ปรับลด */
+}
+
+.shop-now-button {
+    width: 150px; /* กำหนดความกว้างที่ชัดเจนขึ้น */
+    padding: 10px 20px; /* ปรับลด */
+    font-size: 18px; /* ปรับลด */
+    border-radius: 5px;
+}
+
+/* ====================================
+   7. FOOTER STYLES
+   ==================================== */
+
+.footerwidth {
+   /* W 448 (ความกว้าง - Width) */
+    width: 100%; 
+    
+    /* H 73 (ความสูง - Height) */
+    height: 100%;
+    
+    /* เพิ่ม border-radius เพื่อให้ขอบมนเหมือนในภาพ (ถ้าต้องการ) */
+    
+}
+
+.footer-social {
+    gap: 15px; /* ปรับลดระยะห่าง */
+    padding-top: 30px; /* ปรับลด */
+    padding-bottom: 15px;
+}
+
+.font4foot {
+    font-size: 14px; /* ปรับลด */
+}
+
+/* การจัด Layout หลัก */
+.box {
+    width: 90%; /* ให้ใช้ความกว้าง 90% ของหน้าจอ */
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-list-container {
+    display: flex;
+    overflow-x: scroll; 
+    scrollbar-width: none; /* สำหรับ Firefox */
+    -ms-overflow-style: none; /* สำหรับ IE/Edge */
+    flex-wrap: nowrap; 
+    padding: 0 1px; /* เพิ่ม padding ด้านข้างสำหรับ Mobile */
+    -webkit-overflow-scrolling: touch; 
+}
+
+/* ซ่อน Scrollbar สำหรับ Webkit (Chrome, Safari) */
+.product-list-container::-webkit-scrollbar {
+    display: none;
+}
+}
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 1024px) { 
+/* --- Form Content --- */
+.welcome-message {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.product-list-container {
+    /* สั่งให้เรียงในแนวนอนและห้ามขึ้นบรรทัดใหม่ */
+    display: flex;
+    flex-wrap: nowrap; 
+    
+    /* สั่งให้เนื้อหาที่เกินขอบเขตถูกเลื่อน (Horizontal Scroll) */
+    overflow-x: scroll; 
+    
+    /* จัดการซ่อน Scrollbar */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch; 
+    
+    /* เพิ่ม Padding ด้านข้าง */
+    padding: 0 15px; 
+} 
+.product-list-container::-webkit-scrollbar {
+    display: none;
+}
+.subtitle {
+    color: #999;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.form-content form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #8b3c48; /* สีน้ำตาลแดง */
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* --- Separator --- */
+.or-separator {
+    text-align: center;
+    color: #999;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+/* --- Social Buttons --- */
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.line-btn {
+    background-color: #4CAF50; /* สีเขียว LINE */
+    color: white;
+    font-weight: bold;
+}
+
+.google-btn {
+    background-color: white;
+    color: #555;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+/* ไอคอนจาก Font Awesome สำหรับ LINE (หากใช้) */
+.line-btn .fab {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* --- One-time Link --- */
+.onetime-link {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.onetime-link i {
+    margin-right: 5px;
+    color: #8b3c48;
+}
+
+/* --- Main Sign In Button --- */
+.sign-in-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #8b3c48; /* สีหลักตามรูป */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #a04956;
+}
+/* 4. Custom CSS */
+        
+    
+        .nav-group {
+            flex: 1;
+        }
+
+        /* กลุ่มซ้าย: จัดชิดซ้าย */
+        .nav-group-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        /* กลุ่มกลาง: จัดตรงกลาง */
+        .nav-group-center {
+            display: flex;
+            justify-content: center;
+        }
+      
+        .navbar-brand:hover {
+            color: #8b3a3a;
+        }
+
+        /* กลุ่มขวา: จัดชิดขวา */
+        .nav-group-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        /* --- สไตล์ลิงก์และไอคอน --- */
+        .navbar .nav-link,
+        .navbar .menu-toggle {
+            color: #333;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 0.5rem; /* เพิ่ม padding ให้กดง่ายขึ้น */
+        }
+        .navbar .nav-link:hover,
+        .navbar .menu-toggle:hover {
+            color: #000;
+        }
+
+        /* ไอคอนใน Navbar */
+        .navbar .bi {
+            font-size: 1.3rem; 
+            vertical-align: middle;
+        }
+        .navbar .bi-list {
+            font-size: 1.7rem; /* ไอคอนเมนูใหญ่พิเศษ */
+        }
+
+        /* --- สไตล์ช่องค้นหา (search...) --- */
+        .nav-search-form {
+            padding: 0;
+            margin: 0;
+        }
+        .nav-search-input {
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            padding-left: 0.5rem;
+            font-style: italic; 
+            width: 100px; 
+        }
+        .nav-search-input:focus {
+            box-shadow: none;
+            background-color: transparent;
+            border-bottom: 1px solid #6a2b2b;
+            font-style: normal;
+            width: 150px; 
+            transition: width 0.3s ease-in-out;
+        }
+        
+        /* --- โครงสร้างหลัก Navbar --- */
+        .navbar-main {
+            display: flex;
+            /* สั่งให้ flex container จัดช่องว่างระหว่าง 'กลุ่ม' */
+            justify-content: space-between; 
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-group {
+            flex: 1;
+        }
+
+        /* กลุ่มซ้าย: จัดชิดซ้าย */
+        .nav-group-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        /* กลุ่มกลาง: จัดตรงกลาง */
+        .nav-group-center {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-brand {
+            font-family: "Oswald", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color:#561C24;
+            font-size: 48px;
+             margin: 0;
+        }
+        .navbar-brand:hover {
+            color: #8b3a3a;
+        }
+
+        /* กลุ่มขวา: จัดชิดขวา */
+      .nav-group-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1;
+            padding-right: 1rem; /* <-- เพิ่มบรรทัดนี้ */
+        }
+
+        /* --- สไตล์ลิงก์และไอคอน --- */
+        .navbar .nav-link,
+        .navbar .menu-toggle {
+            color: #333;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 0.5rem; /* เพิ่ม padding ให้กดง่ายขึ้น */
+        }
+        
+        .navbar .menu-toggle:hover {
+            color: #000;
+        }
+
+        /* ไอคอนใน Navbar */
+        .navbar .bi {
+            font-size: 1.3rem; 
+            vertical-align: middle;
+        }
+        .navbar .bi-list {
+            font-size: 1.7rem; /* ไอคอนเมนูใหญ่พิเศษ */
+        }
+
+        /* --- สไตล์ช่องค้นหา (search...) --- */
+        .nav-search-form {
+            
+            padding: 0;
+            margin: 0;
+        }
+        .nav-search-input {
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            padding-left: 0.5rem;
+            font-style: italic; 
+            width: 100px; 
+        }
+        .nav-search-input:focus {
+            box-shadow: none;
+            background-color: transparent;
+            border-bottom: 1px solid #6a2b2b;
+            font-style: normal;
+            width: 150px; 
+            transition: width 0.3s ease-in-out;
+        }
+    .mitr-bold {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #6a2b2b;;
+ 
+}
+
+  .mitr-boldtwo{
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+font-size: 16px;
+  color: #6a2b2b;;
+  font-style: normal;
+}
+ .mitr-boldtwow{
+font-size: 48px;
+font-family: "Oswald", sans-serif;
+font-weight: 700;
+font-size: 16px;
+color: #6a2b2b;;
+ font-style: normal;
+}
+
+.textpopular{
+    font-size: 24px;
+    text-align: center;
+    color: #6a2b2b;
+    margin-top: 40px;
+    
+}
+/* สำหรับหัวข้อ "Popular products" */
+.popular-products-title {
+  font-size: 2.5rem; /* ทำให้หัวข้อใหญ่ขึ้น */
+  font-weight: bold; /* ทำให้ตัวหนาขึ้น */
+  color: #333; /* ปรับสี (ถ้าต้องการ) */
+}
+
+/* สำหรับข้อความภายใน Box 1, 2, 3 */
+.box-content {
+  min-height: 370px; /* กำหนดความสูงขั้นต่ำของแต่ละ Box เพื่อให้ Box ดูใหญ่ขึ้น */
+  display: flex; /* ใช้ flexbox เพื่อจัดข้อความตรงกลางแนวตั้ง */
+  align-items: right; 
+  justify-content: right; /* จัดกลางแนวนอน */
+  font-size: 1.5rem; /* ขนาดตัวอักษรใน Box ให้ใหญ่ขึ้น */
+  font-weight: 500; /* น้ำหนักตัวอักษร */
+  border-radius: 8px; /* ทำให้ขอบมนขึ้นเล็กน้อย */
+  box-shadow: 0 4px 8px rgba(0,0,0,.05); /* เพิ่มเงาเล็กน้อยเพื่อให้ดูมีมิติ */
+}
+.card-product-card{
+  
+    width: 330;
+    height: auto    ;
+    
+}
+/* จัดสไตล์กล่อง .card ให้อยู่ตรงกลาง */
+.product-card {
+  border: none;
+  text-align: center; 
+}
+
+/* ทำให้กล่องรูปภาพสูงเท่ากัน */
+.product-image-container {
+  position: relative;
+  background-color: #f8f8f8;
+  padding: 25px;
+  border-radius: 7px;
+  margin: 2px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+  width: 100%;
+  height: 300px; /* <-- กำหนดความสูงคงที่ */
+
+}
+
+/* จัดการรูปภาพข้างใน */
+.product-actual-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* ไอคอนหัวใจ (เหมือนเดิม) */
+.product-wishlist-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+.product-wishlist-icon:hover {
+  color: #dc3545;
+}
+
+
+/* จัดสไตล์ส่วนข้อความ (ที่เพิ่มเข้ามาใหม่) */
+.product-card .card-body {
+  padding: 1rem 0.5rem; /* เพิ่มช่องว่างบน-ล่าง */
+}
+
+.product-card .card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}   
+.Boxdos{
+  /* background-color: #000; */
+  
+}
+
+.product-card .product-brand {
+  font-size: 0.95rem;
+  color: #6c757d; /* สีเทา */
+  margin-bottom: 0.25rem;
+}
+
+.product-card .product-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+.card-body{
+  /* background-color: #747474; */
+
+  /* margin-left: 10px; */
+}
+/* อักษรชิดซ้าย */
+.textt23{
+  text-align: left
+}
+.fonts1{
+   font-family: "Oswald", sans-serif;
+  font-weight: 700;
+font-size: 26px;
+  color: #561C24;;
+  font-style: normal;
+}
+.fonts2{
+   font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  margin-top: -8px;
+font-size: 24px;
+  color: #6D2932;;
+  font-style: normal;
+}
+.fonts3{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: -18px;
+font-size: 18px;
+  color: #919191;;
+  font-style: normal;
+
+}
+.textpopulars2{
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  margin-top: -15px;
+    font-size: 16px;
+    color: #6a2b2b;
+    
+    
+}
+/* ========== Promo Box Styles ========== */
+
+.promo-box {
+  /* ใช้สีแดงเข้มที่คุณเคยใช้ */
+  margin-top: 10px;
+  background-color: #6a2b2b; 
+  color: #ffffff; /* ตัวอักษรสีขาว */
+  padding: 2rem;   /* เว้นช่องว่างภายใน 2rem (ประมาณ 32px) */
+  border-radius: 10px; /* ทำให้ขอบมน */
+  height: 100%; /* ทำให้ 2 กล่องสูงเท่ากัน */
+  
+  /* ตั้งค่าเผื่อให้ row ข้างในอยู่ตรงกลางแนวตั้ง */
+  display: flex;
+  text-align: left;
+}
+
+.promo-title {
+  /* ใช้ฟอนต์ Oswald ที่คุณมี */
+  font-family: "Oswald", sans-serif;
+  font-weight: 700; /* ตัวหนา */
+  font-size: 24px; /* ขนาด 36px (ปรับได้ตามชอบ) */
+  margin-bottom: 0.75rem;
+}
+
+.promo-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400; /* ความหนาปกติ */
+  font-size: 14px ;
+  opacity: 0.9; /* ทำให้จางลงเล็กน้อย */
+}
+.img-fluid{
+  height: 100%;
+  width: 100%;
+}
+.font4{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: -18px;
+  font-size: 15px;
+  color: #9c9c9c;;
+  font-style: normal;
+}
+.font4foot{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #D5D5D5;;
+  font-style: normal;
+}
+
+
+.font001{
+   font-family: "Oswald", sans-serif;
+  font-weight: 700;
+font-size: 20px;
+  color: #561C24  ;
+  font-style: normal;
+}
+.textpopulars{
+    font-size: 42px;
+    text-align: center;
+    color: #561C24  ;
+    margin-top: 40px;
+    
+}
+.foot{
+  background-color: #561C24;
+  width: 1479.01px;
+  height: 241px;
+}
+/* 1. พื้นหลังเต็มหน้าจอ */
+.footerwidth {
+    width: 100%;
+    height: auto; 
+
+    background-color: #5d2828; 
+    margin: 0; 
+    padding: 0;
+}
+
+
+/* จัดการ Layout ภายในกล่อง */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+   
+}
+
+.footer-social {
+    /* จัดไอคอนให้อยู่ตรงกลาง */
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* ระยะห่างระหว่างไอคอน */
+    color: ;
+    padding-top: 100px;
+    color: #D5D5D5;
+}
+.box{
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 80%;
+  margin-right: auto;
+/* background-color: #333; */
+}
+.overlay-text {
+    /* **จัดตำแหน่งแบบ absolute เพื่อให้อยู่ทับภาพ** */
+    position: absolute;
+    /* จัดกึ่งกลางในแนวนอนและแนวตั้ง (หรือจะกำหนด top/left/right/bottom ก็ได้) */
+     /* เริ่มต้นที่ 50% จากด้านบน */
+   /* เริ่มต้นที่ 50% จากด้านซ้าย */
+    transform: translate(-50%, -50%); /* เลื่อนกลับมาครึ่งหนึ่งของขนาดตัวเองเพื่อให้อยู่กึ่งกลางจริงๆ */
+    /* จัดรูปแบบข้อความ */
+    color: white; /* สีข้อความ */
+    background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งแสงเล็กน้อย */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 80%; /* ความกว้างของกล่องข้อความ */
+    max-width: 500px; /* จำกัดความกว้างสูงสุด */
+}
+.A {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: wheat;
+}
+
+.top-left {
+  position: absolute;
+  /* background-color: #333; */
+  text-align: left;
+ width: 60%;
+  top: 60px;
+  left: 50px;
+}
+.Newcollection{
+font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #ffffff;;
+} 
+.Discount{
+font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  color: #ffffff;;
+} 
+.shop-now-button {
+    display: inline-block;
+    background-color: #561C24; /* สีแดงเข้มตามภาพ */
+    color: white;
+    width: 30%;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+    border-radius: 10px;
+    font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+
+   /* เพิ่ม Transition เมื่อ hover */
+}
+.Newcollection2{
+font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #ffffff;;
+} 
+.Discount2{
+font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  color: #ffffff;
+}
+.Newcollection3{
+font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #ffffff;;
+} 
+.Discount3{
+font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 38px;
+  color: #ffffff;
+}  
+.boxlogin{
+  width: 300;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+}
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  
+
+        /* --- โครงสร้างหลัก Navbar --- */
+        .navbar-main {
+            display: flex;
+            /* สั่งให้ flex container จัดช่องว่างระหว่าง 'กลุ่ม' */
+            justify-content: space-between; 
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-group {
+            flex: 1;
+        }
+
+        /* กลุ่มซ้าย: จัดชิดซ้าย */
+        .nav-group-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        
+        /* กลุ่มกลาง: จัดตรงกลาง */
+        .nav-group-center {
+            display: flex;
+            justify-content: center;
+        }
+        .navbar-brand {
+            font-family: "Oswald", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color:#561C24;
+            font-size: 48px;
+             margin: 0;
+        }
+        .navbar-brand:hover {
+            color: #8b3a3a;
+        }
+
+        /* กลุ่มขวา: จัดชิดขวา */
+      .nav-group-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1;
+            padding-right: 1rem; /* <-- เพิ่มบรรทัดนี้ */
+        }
+
+        /* --- สไตล์ลิงก์และไอคอน --- */
+        .navbar .nav-link,
+        .navbar .menu-toggle {
+            color: #333;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 0.5rem; /* เพิ่ม padding ให้กดง่ายขึ้น */
+        }
+        
+        .navbar .menu-toggle:hover {
+            color: #000;
+        }
+
+        /* ไอคอนใน Navbar */
+        .navbar .bi {
+            font-size: 1.3rem; 
+            vertical-align: middle;
+        }
+        .navbar .bi-list {
+            font-size: 1.7rem; /* ไอคอนเมนูใหญ่พิเศษ */
+        }
+
+        /* --- สไตล์ช่องค้นหา (search...) --- */
+        .nav-search-form {
+            
+            padding: 0;
+            margin: 0;
+        }
+        .nav-search-input {
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+            padding-left: 0.5rem;
+            font-style: italic; 
+            width: 100px; 
+        }
+        .nav-search-input:focus {
+            box-shadow: none;
+            background-color: transparent;
+            border-bottom: 1px solid #6a2b2b;
+            font-style: normal;
+            width: 150px; 
+            transition: width 0.3s ease-in-out;
+        }
+    .mitr-bold {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #6a2b2b;;
+ 
+}
+
+  .mitr-boldtwo{
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+font-size: 16px;
+  color: #6a2b2b;;
+  font-style: normal;
+}
+ .mitr-boldtwow{
+font-size: 48px;
+font-family: "Oswald", sans-serif;
+font-weight: 700;
+font-size: 16px;
+color: #6a2b2b;;
+ font-style: normal;
+}
+
+.textpopular{
+    font-size: 42px;
+    text-align: center;
+    color: #6a2b2b;
+    margin-top: 40px;
+    
+}
+/* สำหรับหัวข้อ "Popular products" */
+.popular-products-title {
+  font-size: 2.5rem; /* ทำให้หัวข้อใหญ่ขึ้น */
+  font-weight: bold; /* ทำให้ตัวหนาขึ้น */
+  color: #333; /* ปรับสี (ถ้าต้องการ) */
+}
+
+/* สำหรับข้อความภายใน Box 1, 2, 3 */
+.box-content {
+  min-height: 370px; /* กำหนดความสูงขั้นต่ำของแต่ละ Box เพื่อให้ Box ดูใหญ่ขึ้น */
+  display: flex; /* ใช้ flexbox เพื่อจัดข้อความตรงกลางแนวตั้ง */
+  align-items: right; 
+  justify-content: right; /* จัดกลางแนวนอน */
+  font-size: 1.5rem; /* ขนาดตัวอักษรใน Box ให้ใหญ่ขึ้น */
+  font-weight: 500; /* น้ำหนักตัวอักษร */
+  border-radius: 8px; /* ทำให้ขอบมนขึ้นเล็กน้อย */
+  box-shadow: 0 4px 8px rgba(0,0,0,.05); /* เพิ่มเงาเล็กน้อยเพื่อให้ดูมีมิติ */
+}
+.card-product-card{
+  
+    width: 330;
+    height: auto    ;
+    
+}
+/* จัดสไตล์กล่อง .card ให้อยู่ตรงกลาง */
+.product-card {
+  border: none;
+  text-align: center; 
+}
+
+/* ทำให้กล่องรูปภาพสูงเท่ากัน */
+.product-image-container {
+  position: relative;
+  background-color: #f8f8f8;
+  padding: 25px;
+  border-radius: 7px;
+  margin: 2px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  overflow: hidden;
+  width: 100%;
+  height: 400px; /* <-- กำหนดความสูงคงที่ */
+
+}
+
+/* จัดการรูปภาพข้างใน */
+.product-actual-image {
+
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* ไอคอนหัวใจ (เหมือนเดิม) */
+.product-wishlist-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+}
+.product-wishlist-icon:hover {
+  color: #dc3545;
+}
+
+
+/* จัดสไตล์ส่วนข้อความ (ที่เพิ่มเข้ามาใหม่) */
+.product-card .card-body {
+  padding: 1rem 0.5rem; /* เพิ่มช่องว่างบน-ล่าง */
+  
+}
+
+.product-card .card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+
+.product-card .product-brand {
+  font-size: 0.95rem;
+  color: #6c757d; /* สีเทา */
+  margin-bottom: 0.25rem;
+}
+
+.product-card .product-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+.card-body{
+  /* background-color: #747474; */
+
+  /* margin-left: 10px; */
+}
+
+/* อักษรชิดซ้าย */
+.textt23{
+  text-align: left
+}
+.fonts1{
+   font-family: "Oswald", sans-serif;
+  font-weight: 700;
+font-size: 32px;
+  color: #561C24;;
+  font-style: normal;
+}
+.fonts2{
+   font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  margin-top: -8px;
+font-size: 28px;
+  color: #6D2932;;
+  font-style: normal;
+}
+.fonts3{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: -18px;
+font-size: 24px;
+  color: #919191;;
+  font-style: normal;
+
+}
+.textpopulars2{
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: 300;
+    font-size: 24px;
+    color: #6a2b2b;
+    
+    
+}
+/* ========== Promo Box Styles ========== */
+
+.promo-box {
+  /* ใช้สีแดงเข้มที่คุณเคยใช้ */
+  background-color: #6a2b2b; 
+  color: #ffffff; /* ตัวอักษรสีขาว */
+  padding: 2rem;   /* เว้นช่องว่างภายใน 2rem (ประมาณ 32px) */
+  border-radius: 10px; /* ทำให้ขอบมน */
+  height: 100%; /* ทำให้ 2 กล่องสูงเท่ากัน */
+  
+  /* ตั้งค่าเผื่อให้ row ข้างในอยู่ตรงกลางแนวตั้ง */
+  display: flex;
+  text-align: left;
+}
+
+.promo-title {
+  /* ใช้ฟอนต์ Oswald ที่คุณมี */
+  font-family: "Oswald", sans-serif;
+  font-weight: 700; /* ตัวหนา */
+  font-size: 2.25rem; /* ขนาด 36px (ปรับได้ตามชอบ) */
+  margin-bottom: 0.75rem;
+}
+
+.promo-text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400; /* ความหนาปกติ */
+  font-size: 1.1rem;
+  opacity: 0.9; /* ทำให้จางลงเล็กน้อย */
+}
+.img-fluid{
+  height: 100%;
+}
+.font4{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  margin-top: -18px;
+  font-size: 18px;
+  color: #9c9c9c;;
+  font-style: normal;
+}
+.font4foot{
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #D5D5D5;;
+  font-style: normal;
+}
+
+
+.font001{
+   font-family: "Oswald", sans-serif;
+  font-weight: 700;
+font-size: 32px;
+  color: #561C24  ;
+  font-style: normal;
+}
+.textpopulars{
+    font-size: 42px;
+    text-align: center;
+    color: #561C24  ;
+    margin-top: 40px;
+    
+}
+.foot{
+  background-color: #561C24;
+  width: 1479.01px;
+  height: 241px;
+}
+/* 1. พื้นหลังเต็มหน้าจอ */
+.footerwidth {
+    width: 100%;
+    height: auto; 
+
+    background-color: #5d2828; 
+    margin: 0; 
+    padding: 0;
+}
+
+
+/* จัดการ Layout ภายในกล่อง */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+   
+}
+
+.footer-social {
+    /* จัดไอคอนให้อยู่ตรงกลาง */
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* ระยะห่างระหว่างไอคอน */
+    color: ;
+    padding-top: 100px;
+    color: #D5D5D5;
+}
+.box{
+  margin-left: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 60%;
+  margin-right: auto;
+/* background-color: #333; */
+}
+.overlay-text {
+    /* **จัดตำแหน่งแบบ absolute เพื่อให้อยู่ทับภาพ** */
+    position: absolute;
+    /* จัดกึ่งกลางในแนวนอนและแนวตั้ง (หรือจะกำหนด top/left/right/bottom ก็ได้) */
+     /* เริ่มต้นที่ 50% จากด้านบน */
+   /* เริ่มต้นที่ 50% จากด้านซ้าย */
+    transform: translate(-50%, -50%); /* เลื่อนกลับมาครึ่งหนึ่งของขนาดตัวเองเพื่อให้อยู่กึ่งกลางจริงๆ */
+    /* จัดรูปแบบข้อความ */
+    color: white; /* สีข้อความ */
+    background-color: rgba(0, 0, 0, 0.5); /* พื้นหลังโปร่งแสงเล็กน้อย */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 80%; /* ความกว้างของกล่องข้อความ */
+    max-width: 500px; /* จำกัดความกว้างสูงสุด */
+}
+.A {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: wheat;
+}
+
+.top-left {
+  position: absolute;
+  /* background-color: #333; */
+  text-align: left;
+ width: 60%;
+  top: 60px;
+  left: 50px;
+}
+.Newcollection{
+font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  color: #ffffff;;
+} 
+.Discount{
+font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  color: #ffffff;;
+} 
+.shop-now-button {
+    display: inline-block;
+    background-color: #561C24; /* สีแดงเข้มตามภาพ */
+    color: white;
+    width: 30%;
+    text-align: center;
+    padding: 15px 30px;
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+    border-radius: 10px;
+    font-size: 32px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+
+   /* เพิ่ม Transition เมื่อ hover */
+}
+.Newcollection2{
+font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 198px;
+  color: #ffffff;;
+} 
+.Discount2{
+font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  color: #ffffff;
+}
+.Newcollection3{
+font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 198px;
+  color: #ffffff;;
+} 
+.Discount3{
+font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  color: #ffffff;
+}  
+.boxlogin{
+  width: 300;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+}
+
+
+/* ---------หน้า login------------------ */
+.fonts23{
+   font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  /* margin-top: -8px; */
+font-size: 27px;
+  color: #6D2932;;
+  font-style: normal;
+}
+.account-container {
+    width: 100%;
+    max-width: 450px; /* ปรับขนาดตามต้องการ */
+    margin-top: 100px;
+    /* background-color: #ffffff; */
+   margin-left: auto;
+   margin-right: auto;
+    text-align: center;
+}
+.fontssignin{
+   font-family: "Oswald", sans-serif;
+  font-weight: 400;
+font-size: 22px;
+  color: #561C24;
+  font-style: normal;
+}
+
+/* --- Tabs (SIGN IN / REGISTER) --- */
+.header-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+    margin-bottom: 30px;
+    /* background-color: #000; */
+    border-bottom: 2px solid #9e9e9e;
+}
+.header-tabs2{
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+    margin-bottom: 30px;
+    /* background-color: #000; */
+    border-bottom: 2px solid #9e9e9e;
+}
+
+.tab-link {
+       padding: 10px 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 0 80px;
+    text-transform: uppercase;
+    position: relative;
+
+    /* --- เพิ่มบรรทัดนี้ --- */
+    white-space: nowrap; 
+}
+
+.tab-link2 {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 0 80px;
+    text-transform: uppercase;
+    position: relative;
+
+    /* --- เพิ่มบรรทัดนี้ --- */
+    white-space: nowrap; 
+}
+
+.tab-link.active {
+  width: 200px;
+    color: #8b3c48; /* สีน้ำตาลแดงตามรูป */
+    border-bottom-color: #8b3c48;
+}
+.tab-link.active2 {
+  width: 200px;
+    color: #8b3c48; /* สีน้ำตาลแดงตามรูป */
+    border-bottom-color: #8b3c48;
+}
+
+
+/* --- Form Content --- */
+.welcome-message {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+     font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  /* margin-top: -8px; */
+font-size: 16px;
+  color: #6D2932;;
+  font-style: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+}
+
+.form-content form {
+    text-align: left;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #6D2932;;
+  font-style: normal;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    /* color: #333; */
+
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: left;
+     color: #6D2932;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+     font-family: "Oswald", sans-serif;
+  font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* --- Separator --- */
+.or-separator {
+    text-align: center;
+ font-weight: 400;
+font-style: normal;
+font-family: "Oswald", sans-serif;
+    color: #6D2932;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+/* --- Social Buttons --- */
+.social-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.line-btn {
+    background-color: #4CAF50; /* สีเขียว LINE */
+    color: white;
+    font-weight: 400;
+font-style: normal;
+font-family: "Oswald", sans-serif;
+font-size: 16px;
+}
+
+.google-btn {
+    background-color: white;
+    color: #6D2932;
+    border: 1px solid #ccc;
+     font-weight: 400;
+font-style: normal;
+font-family: "Oswald", sans-serif;
+font-size: 16px;
+}
+
+/* ไอคอนจาก Font Awesome สำหรับ LINE (หากใช้) */
+.line-btn .fab {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* --- One-time Link --- */
+.onetime-link {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #6D2932;;
+     font-family: "Oswald", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.onetime-link i {
+    margin-right: 5px;
+    color: #8b3c48;
+}
+
+/* --- Main Sign In Button --- */
+.sign-in-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #8b3c48; /* สีหลักตามรูป */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: #a04956;
+}
+.textt{
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  /* margin-top: -8px; */
+font-size: 23px;
+  color: #6D2932;;
+  font-style: normal;
+}
+.textt2{
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  /* margin-top: -8px; */
+font-size: 15px;
+  color: #6D2932;;
+  font-style: normal;
+}
+.textt12{
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: left;
+  /* margin-top: -8px; */
+font-size: 15px;
+  color: #6D2932;;
+  font-style: normal;
+}
+/* --- CSS สำหรับฟอร์ม Register (เพิ่มเข้าไป) --- */
+
+/* 1. สไตล์สำหรับ <select> (ช่อง Birthday) */
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #999; /* สีของ placeholder "Birthday" */
+    
+    /* ซ่อนลูกศร Dropdown เริ่มต้น */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    /* เพิ่มลูกศร 'v' แบบกำหนดเอง (เหมือนในภาพ) */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23333' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+/* 2. เมื่อผู้ใช้เลือกตัวเลือกแล้ว ให้เปลี่ยนสีตัวอักษรเป็นสีเข้ม */
+.input-group select:valid {
+    color: #333;
+}
+
+/* 3. สไตล์สำหรับข้อความ Checkbox ยินยอม */
+.agreement-check .form-check-label {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.4;
+    text-align: left; /* จัดให้อยู่ชิดซ้าย */
+}
+.product-list-container {
+    /* สั่งให้เรียงในแนวนอนและห้ามขึ้นบรรทัดใหม่ */
+    display: flex;
+    flex-wrap: nowrap; 
+    
+    /* สั่งให้เนื้อหาที่เกินขอบเขตถูกเลื่อน (Horizontal Scroll) */
+    overflow-x: scroll; 
+    
+    /* จัดการซ่อน Scrollbar */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch; 
+    /* เพิ่ม Padding ด้านข้าง */
+    padding: 0 10px; 
+    
+}
+.product-list-container::-webkit-scrollbar {
+    display: none;
+}
+.card-body {
+    /* เพิ่ม padding-top เพื่อให้รายละเอียดสินค้าไม่ติดรูปภาพจนเกินไป */
+    padding: 10px 0 0px 0; /* เพิ่ม Padding ด้านบนจาก 0 เป็น 10px หรือ 15px */
+    flex-grow: 1; 
+    text-align: left; 
+}
+}

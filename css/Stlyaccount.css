@@ -1,0 +1,739 @@
+
+/* ... (ส่วน selector พื้นฐาน * และ body เหมือนเดิม) ... */
+
+/* Wrapper หลัก: ลด max-width สำหรับ Mobile */
+
+
+/* ==========================================================
+ * 1. ส่วนหัว (Banner) - ปรับความสูงสำหรับ Mobile
+ * ========================================================== */
+.header-banner {
+    display: flex;
+    width: 100%;
+    /* ลดความสูงแบนเนอร์ให้เหมาะสมกับโทรศัพท์มือถือ */
+    height: 150px; 
+    margin: 0 auto;
+}
+/* ... (ส่วน banner-image: green, yellow, orange, pink เหมือนเดิม) ... */
+
+/* ==========================================================
+ * 2. ส่วนโปรไฟล์และชื่อ - ลดขนาดสำหรับ Mobile
+ * ========================================================== */
+.profile-container {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.profile-icon {
+    /* ลดขนาดไอคอนจาก 210px เหลือ 70px */
+    width: 100px;
+    height: 100px;
+    background-color: #747373;
+    border-radius: 50%;
+    /* ปรับ margin ลบให้เหมาะสมกับขนาด 70px */
+    margin: -35px auto 5px; /* ดึงขึ้นมาทับแบนเนอร์ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(128, 128, 128, 0.1);
+    border: 3px solid #fff; /* ปรับขนาดขอบ */
+    z-index: 10;
+}
+.profile-icon2 {
+    /* ลดขนาดไอคอนจาก 210px เหลือ 70px */
+    width: 100px;
+    height: 100px;
+   
+    border-radius: 50%;
+    /* ปรับ margin ลบให้เหมาะสมกับขนาด 70px */
+    margin: -0px auto 5px; /* ดึงขึ้นมาทับแบนเนอร์ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 3px solid #fff; /* ปรับขนาดขอบ */
+    z-index: 10;
+}
+
+
+.emoji {
+    font-size: 30px; /* ลดขนาดอีโมจิ */
+}
+
+.page-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+  color: #000;
+    font-size: 20px;
+    color: var(--brand-dark); 
+    margin-top: 5px; /* ปรับให้ใกล้ไอคอนมากขึ้น */
+}
+
+
+/* ==========================================================
+ * 3. Dashboard Grid & Column (Mobile: col-12)
+ * ========================================================== */
+.dashboard-grid-container {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    /* ใช้ max-width ที่แคบลงสำหรับ Mobile/iPad เล็ก */
+    max-width: 600px; 
+    padding: 10px; /* ลด Padding โดยรวม */
+    margin: 10px auto 20px auto;
+}
+
+/* ตั้งค่าเริ่มต้น: สำหรับจอเล็ก/มือถือ (Mobile First: col-12) */
+.dashboard-col {
+    /* ค่าเริ่มต้นคือ 100% ซึ่งหมายถึง col-12 */
+    flex-basis: 100%; 
+    padding: 5px; /* ลด Padding ระหว่างคอลัมน์ */
+}
+
+    .header-banner {
+    width: 100%;
+    height: auto; /* กำหนดความสูงของแบนเนอร์ */
+    max-width: 100%; /* กำหนดความกว้างสูงสุดของแบนเนอร์ให้อยู่ตรงกลาง*/
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .dashboard-grid-container {
+        /* ใช้ max-width ที่ใหญ่ขึ้นเมื่อหน้าจอใหญ่ */
+        max-width: 900px; 
+        padding: 20px;
+    }
+   
+    
+    
+    .dashboard-col {
+        flex-basis: 50%; /* 2 คอลัมน์ */
+        max-width: 50%;
+        padding: 10px;
+    }
+    
+    .col-left {
+        padding-right: 20px; 
+    }
+    .col-right {
+        padding-left: 20px; 
+    }
+
+    /* คืนค่าขนาดองค์ประกอบเมื่อจอใหญ่ */
+   
+    
+    .header-banner {
+        height: 500px;
+    }
+
+
+}
+
+
+/* ==========================================================
+ * 4. Section Styles
+ * ========================================================== */
+.dashboard-section {
+  /* นี่คือส่วนที่ทำให้เป็น 'กล่องสีเทาอ่อน' */
+  background-color: darkblue 
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.section-title {
+   
+    font-family: "Oswald", sans-serif;
+         font-weight: 500;
+         font-size: 18px;
+ color: #561C24; 
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+   
+}
+.primary-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    background-color: #561C24;
+}
+
+
+
+/* ... (ส่วน section-content เหมือนเดิม) ... */
+
+/* ปรับปรุงข้อความและระยะห่างสำหรับ Mobile */
+.section-content p {
+    font-size: 12px; /* ปรับขนาดฟอนต์ให้ใหญ่ขึ้นเล็กน้อยสำหรับ Mobile */
+    margin-bottom: 10px;
+}
+.section-text {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+         text-align: center;
+         margin-top: 40px;
+ color: #561C24; 
+    margin-bottom: 10px;
+}
+
+/* ปรับให้ข้อความ placeholder ไม่เว้นระยะห่างมากเกินไปใน Mobile */
+.section-advice 
+.section-orders .section-text,
+.section-wishlist .section-text3,
+.section-certificate .section-text4 {
+    padding-top: 20px; /* ลด padding-top */
+    min-height: 50px; /* ลด min-height */
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         text-align: center;
+         font-size: 10px;
+ color: #561C24; 
+}
+.section-text2 {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+        color: #561C24;
+         text-align: center;
+         margin-top: 40px;
+ 
+    margin-bottom: 10px;
+}
+
+
+
+/* ==========================================================
+ * 5. ปุ่ม (Buttons) และ Logout
+ * ========================================================== */
+.action-button {
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+         font-weight: 300;
+        
+    padding: 8px 10px;
+}
+.page-title {
+   font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 28px;
+ color: #561C24; 
+    margin-top: 30px; /* ดึงชื่อขึ้นเล็กน้อยให้ใกล้ไอคอน */
+}
+/* ปุ่ม Logout */
+.logout-container {
+    width: 100%;
+    max-width: 600px; /* ใช้ max-width เดียวกับ Grid Container */
+    text-align: right;
+    padding: 0 15px 20px 15px; /* ลด Padding */
+    margin: 0 auto;
+    
+}
+
+.logout-button {
+    width: 100%;
+    font-size: 14px; 
+    font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         text-align: center;
+    padding: 6px 10px;
+}
+
+
+
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 1024px) {   
+    .header-banner {
+   
+    width: 100%;
+    height: auto; /* กำหนดความสูงของแบนเนอร์ */
+    max-width: 100%; /* กำหนดความกว้างสูงสุดของแบนเนอร์ให้อยู่ตรงกลาง*/
+    margin: 0 auto;
+}
+.profile-container {
+    text-align: center;
+    position: relative;
+    /* จัดตำแหน่งให้อยู่ตรงกลางของแบนเนอร์และชื่อ */
+    margin-bottom: 20px;
+    width: 100%; 
+  
+    margin: 0 auto;
+}
+
+.profile-icon {
+    width: 210px;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 50%;
+    /* ใช้ค่าลบเพื่อดึงขึ้นมาทับส่วนแบนเนอร์ */
+    margin: -120px auto 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 5px solid #fff; /* ขอบสีขาวรอบไอคอน */
+    z-index: 10; /* ให้ไอคอนอยู่ด้านบนสุด */
+}
+
+.emoji {
+    font-size: 40px;
+}
+
+.page-title {
+   font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 28px;
+ color: #561C24; 
+    margin-top: 30px; /* ดึงชื่อขึ้นเล็กน้อยให้ใกล้ไอคอน */
+}
+
+/* การตั้งค่าพื้นฐานของหน้าเว็บ */
+.navera-header-wrapper {
+    /* กำหนดให้ส่วนนี้อยู่ตรงกลางของจอถ้าพื้นหลังเป็นสีดำ */
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.dashboard-grid-container {
+    display: flex;
+    flex-wrap: wrap; /* ให้หักบรรทัด (stacking) เมื่อหน้าจอเล็ก */
+    width: 100%;
+    max-width: 900px; 
+    padding: 20px;
+    margin: 0 auto;
+}
+:root {
+    --primary-color: #7b1d28; /* สีน้ำตาลแดง */
+    --background-light: #f5f5f5; /* สีพื้นหลังของกล่อง (สีเทาอ่อน) */
+    --border-color: #e0e0e0;     /* สีเส้นขอบ */
+    --inactive-text-color: #888;
+}
+/* ตั้งค่าเริ่มต้น: สำหรับจอเล็ก/มือถือ (Mobile First) */
+.dashboard-col {
+    /* เทียบเท่ากับ col-12 ใน Bootstrap */
+    flex-basis: 100%; 
+    padding: 10px;
+}
+
+/* Media Query: สำหรับจอ Tablet/Desktop (เทียบเท่ากับ col-md-6) */
+@media (min-width: 768px) {
+    .dashboard-col {
+        flex-basis: 50%; /* 2 คอลัมน์ต่อแถว */
+        max-width: 50%;
+    }
+
+    .col-left {
+        padding-right: 20px; /* สร้างระยะห่างตรงกลาง */
+    }
+    .col-right {
+        padding-left: 20px; /* สร้างระยะห่างตรงกลาง */
+    }
+}
+
+/* ==================================
+ * 4. Section ย่อยใน Dashboard
+ * ================================== */
+.dashboard-section {
+    background-color: var(--background-light); /* สีพื้นหลังอ่อนของกล่อง */
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.section-title {
+    font-family: "Oswald", sans-serif;
+         font-weight: 500;
+         font-size: 28px;
+ color: #561C24; 
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.section-content {
+    min-height: 80px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-text {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+         text-align: center;
+         margin-top: 40px;
+ color: #561C24; 
+    margin-bottom: 10px;
+}
+.section-text2 {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+         text-align: center;
+         margin-top: 60px;
+ color: #561C24; 
+    margin-bottom: 10px;
+}
+.section-text3 {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+         text-align: center;
+         margin-top: 60px;
+ color: #561C24; 
+    margin-bottom: 10px;
+}
+.section-text4 {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+        text-align: center;
+       color: #561C24; 
+         margin-top: 60px;t
+ 
+    margin-bottom: 10px;
+}
+
+
+.inactive-text {
+    font-size: 0.8em;
+    color: #561C24;
+    color: var(--inactive-text-color);
+    margin-bottom: 5px;
+}
+
+/* จัดเลย์เอาต์พิเศษสำหรับกล่อง Certificate */
+.content-with-button {
+    align-items: flex-end; /* จัดปุ่มไปอยู่ด้านขวา */
+}
+
+/* ==================================
+ * 5. ปุ่ม (Buttons)
+ * ================================== */
+.action-button {
+    padding: 10px 15px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 100%; 
+    transition: background-color 0.3s;
+}
+
+/* ปุ่มหลัก (Book appointment, Start shopping) */
+.primary-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+}
+
+.primary-button:hover {
+    background-color: #a02838;
+}
+
+
+/* ปุ่มรอง (Add certificate) */
+.secondary-button {
+    background-color: #fff;
+    color: var(--inactive-text-color);
+    border: 1px solid var(--border-color);
+    width: 100%; /* ให้กว้างครึ่งหนึ่งตามภาพ */
+    max-width: 100%; 
+    margin-top: 15px;
+}
+
+.secondary-button:hover {
+    background-color: var(--border-color);
+    color: var(--text-color);
+}
+
+/* ปุ่ม Logout */
+.logout-container {
+    width: 100%;
+    max-width: 900px;
+    text-align: right;
+    padding: 0 30px 40px 30px;
+    margin: 0 auto;
+}
+
+.logout-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.logout-button:hover {
+    background-color: #a02838;
+}
+}
+
+
+
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+.header-banner {
+    display: flex;
+    width: 100%;
+    height: 700px; /* กำหนดความสูงของแบนเนอร์ */
+    max-width: 100%; /* กำหนดความกว้างสูงสุดของแบนเนอร์ให้อยู่ตรงกลาง*/
+    margin: 0 auto;
+}
+.profile-container {
+    text-align: center;
+    position: relative;
+    /* จัดตำแหน่งให้อยู่ตรงกลางของแบนเนอร์และชื่อ */
+    margin-bottom: 20px;
+    width: 100%; 
+  
+    margin: 0 auto;
+}
+
+.profile-icon {
+    width: 210px;
+    height: 210px;
+    background-color: #fff;
+    border-radius: 50%;
+    /* ใช้ค่าลบเพื่อดึงขึ้นมาทับส่วนแบนเนอร์ */
+    margin: -120px auto 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 5px solid #fff; /* ขอบสีขาวรอบไอคอน */
+    z-index: 10; /* ให้ไอคอนอยู่ด้านบนสุด */
+}
+
+.emoji {
+    font-size: 40px;
+}
+
+.page-title {
+   font-family: "Oswald", sans-serif;
+         font-weight: 700;
+         font-size: 28px;
+ color: #561C24; 
+    margin-top: 30px; /* ดึงชื่อขึ้นเล็กน้อยให้ใกล้ไอคอน */
+}
+
+/* การตั้งค่าพื้นฐานของหน้าเว็บ */
+.navera-header-wrapper {
+    /* กำหนดให้ส่วนนี้อยู่ตรงกลางของจอถ้าพื้นหลังเป็นสีดำ */
+    background-color: #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.dashboard-grid-container {
+    display: flex;
+    flex-wrap: wrap; /* ให้หักบรรทัด (stacking) เมื่อหน้าจอเล็ก */
+    width: 100%;
+    max-width: 900px; 
+    padding: 20px;
+    margin: 0 auto;
+}
+:root {
+    --primary-color: #7b1d28; /* สีน้ำตาลแดง */
+    --background-light: #f5f5f5; /* สีพื้นหลังของกล่อง (สีเทาอ่อน) */
+    --border-color: #e0e0e0;     /* สีเส้นขอบ */
+    --inactive-text-color: #888;
+}
+/* ตั้งค่าเริ่มต้น: สำหรับจอเล็ก/มือถือ (Mobile First) */
+.dashboard-col {
+    /* เทียบเท่ากับ col-12 ใน Bootstrap */
+    flex-basis: 100%; 
+    padding: 10px;
+}
+
+/* Media Query: สำหรับจอ Tablet/Desktop (เทียบเท่ากับ col-md-6) */
+@media (min-width: 768px) {
+    .dashboard-col {
+        flex-basis: 50%; /* 2 คอลัมน์ต่อแถว */
+        max-width: 50%;
+    }
+
+    .col-left {
+        padding-right: 20px; /* สร้างระยะห่างตรงกลาง */
+    }
+    .col-right {
+        padding-left: 20px; /* สร้างระยะห่างตรงกลาง */
+    }
+}
+
+/* ==================================
+ * 4. Section ย่อยใน Dashboard
+ * ================================== */
+.dashboard-section {
+    background-color: var(--background-light); /* สีพื้นหลังอ่อนของกล่อง */
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.section-title {
+    font-family: "Oswald", sans-serif;
+         font-weight: 500;
+         font-size: 28px;
+ color: #561C24; 
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.section-content {
+    min-height: 80px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-text {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+         text-align: center;
+         margin-top: 30px;
+ color: #561C24; 
+    margin-bottom: 10px;
+}
+.section-text2 {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+         text-align: center;
+         margin-top: 45px;
+ color: #561C24; 
+    margin-bottom: 10px;
+}
+.section-text2 {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+         text-align: center;
+         margin-top: 45px;
+ color: #561C24; 
+    margin-bottom: 10px;
+}
+.section-text3 {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+         text-align: center;
+         margin-top: 45px;
+ color: #561C24; 
+    margin-bottom: 10px;
+}
+.section-text4 {
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 10px;
+        text-align: center;
+       color: #561C24; 
+         margin-top: 45px;
+ 
+    margin-bottom: 10px;
+}
+
+
+.inactive-text {
+    font-size: 0.8em;
+    color: #561C24;
+    color: var(--inactive-text-color);
+    margin-bottom: 5px;
+}
+
+/* จัดเลย์เอาต์พิเศษสำหรับกล่อง Certificate */
+.content-with-button {
+    align-items: flex-end; /* จัดปุ่มไปอยู่ด้านขวา */
+}
+
+/* ==================================
+ * 5. ปุ่ม (Buttons)
+ * ================================== */
+.action-button {
+    padding: 10px 15px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    width: 100%; 
+    transition: background-color 0.3s;
+}
+
+/* ปุ่มหลัก (Book appointment, Start shopping) */
+.primary-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+}
+
+.primary-button:hover {
+    background-color: #a02838;
+}
+
+
+/* ปุ่มรอง (Add certificate) */
+.secondary-button {
+    background-color: #fff;
+    color: var(--inactive-text-color);
+    border: 1px solid var(--border-color);
+    width: 100%; /* ให้กว้างครึ่งหนึ่งตามภาพ */
+    max-width: 100%; 
+    margin-top: 15px;
+}
+
+.secondary-button:hover {
+    background-color: var(--border-color);
+    color: var(--text-color);
+}
+
+/* ปุ่ม Logout */
+.logout-container {
+    width: 100%;
+    max-width: 900px;
+    text-align: right;
+    padding: 0 30px 40px 30px;
+    margin: 0 auto;
+}
+
+.logout-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+     font-family: "Oswald", sans-serif;
+         font-weight: 300;
+         font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.logout-button:hover {
+    background-color: #a02838;
+}
+
+
+}   
