@@ -934,7 +934,11 @@ input[type="email"], input[type="text"], .card-inputs input {
   font-size: 20px;
   color: #000000;
 }
-
+.pay-button2 {
+ 
+    color: #f0f0f0; 
+   
+}
 /* ปุ่ม Add to cart */
 .add-to-cart-btn {
     width: 100%;
@@ -1056,6 +1060,7 @@ color: #ffffff;
     align-items: center; /* จัดกึ่งกลางแนวตั้ง */
     /* ... โค้ดเดิม ... */
 }
+
 
 
 
